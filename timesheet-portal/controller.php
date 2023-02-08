@@ -38,8 +38,11 @@ foreach ($_REQUEST as $key => $value) {
         break;
 
         case 'empLogout':
-            session_start();
-            session_destroy();
+            employeeLogout($params);
+        break;
+
+        case 'submitLeave':
+            punchProcess($params);
         break;
 
     }
@@ -51,7 +54,5 @@ foreach ($_REQUEST as $key => $value) {
 echo '<pre>';
 print_r($params['debug']);
 echo '</pre>';
-
-echo $_SESSION['pp_id'];
 
 ?>

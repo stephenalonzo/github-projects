@@ -113,6 +113,24 @@ function employeeLogin($params) {
 
 		header("Location: index.php");
 
+	} else {
+
+		
+	}
+
+	return $params;
+
+}
+
+function employeeLogout($params) {
+
+	$params['startup'] 	= session_start();
+    $params['shutdown'] = session_destroy();
+
+	if ($params['startup'] && $params['shutdown']) {
+
+		header("Location: login.php");
+
 	}
 
 	return $params;
@@ -231,6 +249,76 @@ function punchProcess($params) {
 					dbAccess($params);
 		
 				}
+
+			break;
+
+			case 'submitLeave':
+
+				if ($params['leave_type'] == 'AL') {
+
+					$params['dba']['i'] = "INSERT INTO employee_punches (emp_name, emp_num, emp_punch_date, emp_time_in, emp_time_out, punch_token, punch_type) VALUES (:emp_name, :emp_num, :emp_punch_date, :emp_time_in, :emp_time_out, :punch_token, :punch_type)";
+					$params['bindParam'] = array(
+						':emp_name'			=> $_SESSION['emp_name'],
+						':emp_num'			=> $_SESSION['emp_num'],
+						':emp_punch_date'	=> date('Y-m-d', strtotime($params['leave_time_in'])),
+						':emp_time_in'		=> date('H:i:s', strtotime($params['leave_time_in'])),
+						':emp_time_out'		=> date('H:i:s', strtotime($params['leave_time_out'])),
+						':punch_token'		=> $_SESSION['punch_token'],
+						':punch_type'		=> $params['leave_type']
+					);
+				
+					dbAccess($params);
+			
+					if ($params['dba']['i']) {
+			
+						$params['dba']['i'] = "INSERT INTO leave_applications (emp_name, emp_num, leave_type, leave_date, leave_time_in, leave_time_out, reason_for_leave) VALUES (:emp_name, :emp_num, :leave_type, :leave_date, :leave_time_in, :leave_time_out, :reason_for_leave)";
+						$params['bindParam'] = array(
+							':emp_name'				=> $_SESSION['emp_name'],
+							':emp_num'				=> $_SESSION['emp_num'],
+							':leave_type'			=> $params['leave_type'],
+							':leave_date'			=> date('Y-m-d', strtotime($params['leave_time_in'])),
+							':leave_time_in'		=> date('H:i:s', strtotime($params['leave_time_in'])),
+							':leave_time_out'		=> date('H:i:s', strtotime($params['leave_time_out'])),
+							':reason_for_leave'		=> $params['reason_for_leave']
+						);
+					
+						dbAccess($params);
+			
+					}
+
+				} elseif ($params['leave_type'] == 'SL') {
+
+					$params['dba']['i'] = "INSERT INTO employee_punches (emp_name, emp_num, emp_punch_date, emp_time_in, emp_time_out, punch_token, punch_type) VALUES (:emp_name, :emp_num, :emp_punch_date, :emp_time_in, :emp_time_out, :punch_token, :punch_type)";
+					$params['bindParam'] = array(
+						':emp_name'			=> $_SESSION['emp_name'],
+						':emp_num'			=> $_SESSION['emp_num'],
+						':emp_punch_date'	=> date('Y-m-d', strtotime($params['leave_time_in'])),
+						':emp_time_in'		=> '07:30:00',
+						':emp_time_out'		=> '16:30:00',
+						':punch_token'		=> $_SESSION['punch_token'],
+						':punch_type'		=> $params['leave_type']
+					);
+				
+					dbAccess($params);
+			
+					if ($params['dba']['i']) {
+			
+						$params['dba']['i'] = "INSERT INTO leave_applications (emp_name, emp_num, leave_type, leave_date, leave_time_in, leave_time_out, reason_for_leave) VALUES (:emp_name, :emp_num, :leave_type, :leave_date, :leave_time_in, :leave_time_out, :reason_for_leave)";
+						$params['bindParam'] = array(
+							':emp_name'				=> $_SESSION['emp_name'],
+							':emp_num'				=> $_SESSION['emp_num'],
+							':leave_type'			=> $params['leave_type'],
+							':leave_date'			=> date('Y-m-d', strtotime($params['leave_time_in'])),
+							':leave_time_in'		=> '07:30:00',
+							':leave_time_out'		=> '16:30:00',
+							':reason_for_leave'		=> $params['reason_for_leave']
+						);
+					
+						dbAccess($params);
+			
+					}
+
+				} 
 
 			break;
 

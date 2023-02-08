@@ -1,15 +1,8 @@
 <?php
 
-require_once('controller.php');
-require_once('header.php');
-require_once('authentication.php');
-
-$t1 = strtotime( '2023-02-07 07:30:00' );
-$t2 = strtotime( '2023-02-07 16:30:00' );
-$diff = $t1 - $t2;
-$hours = $diff / ( 60 * 60 );
-
-echo $hours;
+require_once('./controller.php');
+require_once('./header.php');
+require_once('./authentication.php');
 
 ?>
 
@@ -22,6 +15,7 @@ echo $hours;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time Punch Portal</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/jquery-3.6.3.min.js"></script>
 </head>
 
 <body>
@@ -46,7 +40,7 @@ echo $hours;
 
                     ?>
                         <tr>
-                            <td><?php echo date('m/d/Y', strtotime($row['emp_time_in'])); ?></td>
+                            <td><?php echo date('m/d/Y', strtotime($row['emp_punch_date'])); ?></td>
                             <td><?php echo date('h:i A', strtotime($row['emp_time_in'])); ?></td>
                             <td><?php echo date('h:i A', strtotime($row['emp_lunch_out'])); ?></td>
                             <td><?php echo date('h:i A', strtotime($row['emp_lunch_in'])); ?></td>
@@ -67,34 +61,124 @@ echo $hours;
 
                                 $results = singleEmployeeTimesheet($params);
 
-                                $sum    = strtotime('00:00:00');
-                                $sum2   = 0;  
+                                $hours = 0;
 
-                                foreach ($results as $row) {
+                                foreach ( $results as $row ) {
+                                    
+                                    if ($row['punch_type'] == 'AL' || $row['punch_type'] == 'SL' || $row['punch_type'] == 'VL') {
 
-                                    $sum1 = strtotime($row['emp_time_out']) - strtotime($row['emp_time_in']);
-                                    $sum2 = $sum2 + $sum1;
+
+                                    } else {
+
+                                        $start = strtotime($row['emp_time_in']);
+                                        $hours += ( strtotime($row['emp_time_out']) - $start ) / 3600;
+                                        
+                                    }
 
                                 }
 
-                                $sum3 = $sum + $sum2;
-                               
-                                echo date("H:i:s", $sum3);
-                                
+                                if ($hours > '80.00') {
+
+                                    $overtime = $hours - $hours + 80;
+
+                                    echo round($overtime, 2);
+
+                                } else {
+
+                                    echo round($hours, 2);
+
+                                }
+
                                 ?>
                             </span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                             <span><b>Overtime</b></span>
-                            <span>80</span>
+                            <span>
+                                <?php 
+
+                                $results = singleEmployeeTimesheet($params);
+
+                                $hours = 0;
+
+                                foreach ( $results as $row ) {
+
+                                    if ($row['punch_type'] == 'AL' || $row['punch_type'] == 'SL' || $row['punch_type'] == 'VL') {
+
+
+                                    } else {
+
+                                        $start = strtotime($row['emp_time_in']);
+                                        $hours += ( strtotime($row['emp_time_out']) - $start ) / 3600;
+                                        
+                                    }
+
+                                }
+
+                                if ($hours > '80.00') {
+
+                                    $overtime = $hours - 80;
+
+                                    echo round($overtime, 2);
+
+                                } else {
+
+                                    echo '0.00';
+
+                                }
+
+                                ?>
+                            </span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                             <span><b>Sick Leave</b></span>
-                            <span>80</span>
+                            <span>
+                                <?php 
+
+                                $results = singleEmployeeTimesheet($params);
+
+                                $hours = 0;
+
+                                foreach ( $results as $row ) {
+
+                                    if ($row['punch_type'] == 'SL') {
+
+                                        $start = strtotime($row['emp_time_in']);
+                                        $hours += ( strtotime($row['emp_time_out']) - $start ) / 3600;
+
+                                    } 
+
+                                }
+
+                                echo round($hours, 2);
+
+                                ?>
+                            </span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                             <span><b>Annual/Vacation Leave</b></span>
-                            <span>80</span>
+                            <span>
+                                <?php 
+
+                                $results = singleEmployeeTimesheet($params);
+
+                                $hours = 0;
+
+                                foreach ( $results as $row ) {
+
+                                    if ($row['punch_type'] == 'AL' || $row['punch_type'] == 'VL') {
+
+                                        $start = strtotime($row['emp_time_in']);
+                                        $hours += ( strtotime($row['emp_time_out']) - $start ) / 3600;
+
+                                    } 
+
+                                }
+
+                                echo round($hours, 2);
+
+                                ?>
+                            </span>
                         </li>
                     </ul>
                 </div>
