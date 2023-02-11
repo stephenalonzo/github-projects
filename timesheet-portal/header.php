@@ -1,6 +1,10 @@
 <?php
 
-require_once ('./controller.php');
+include_once ('./session.php');
+
+if (!isset($_SESSION['emp_num'])) {
+
+} else {
 
 ?>
 
@@ -14,21 +18,34 @@ require_once ('./controller.php');
         if (isset($_SESSION['emp_num'])) {
         ?>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 align-items-center mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 align-items-center text-center mb-lg-0">
                     <li class="nav-item me-2">
-                        <a class="nav-link" aria-current="page" href="./timesheet.php">My Timesheet</a>
+                        <a class="nav-link" aria-current="page" href="./my-timesheet.php">My Timesheet</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item me-2">
                         <button type="button" class="bg-transparent border border-0 p-0 nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             Apply for Leave
                         </button>
                     </li>
+                    <?php 
+                    
+                    if (isset($_SESSION['emp_position']) && $_SESSION['emp_position'] == 'Manager') {
+                    
+                    ?>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Manage
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./staff-timesheets.php">Staff Timesheets</a></li>
+                            <li><a class="dropdown-item" href="#">Staff Leave Applications</a></li>
+                        </ul>
+                    </li>
+                    <?php } ?>
                 </ul>
                 <span class="d-flex align-items-center justify-content-between">
                     <p class="mx-0 my-0 ms-0 me-3 p-0" style="color: #fff;">Welcome back, <?php echo strtok($_SESSION['emp_name'], " "); ?>!</p>
-                    <form action="" method="post" class="m-0">
-                        <button class="btn btn-secondary" type="submit" name="empLogout">Logout</button>
-                    </form>
+                    <a href="./logout.php" class="btn btn-secondary">Logout</a>
                 </span>
             </div>
         <?php } ?>
@@ -95,3 +112,4 @@ require_once ('./controller.php');
         </div>
     </div>
 </div>
+<?php } ?>

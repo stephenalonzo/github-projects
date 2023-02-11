@@ -1,16 +1,7 @@
 <?php
 
-require_once('header.php');
-require_once('controller.php');
-
-if (!isset($_SESSION['emp_num'])) {
-
-    
-} else {
-
-    header("Location: index.php");
-
-}
+require_once('./header.php');
+require_once('./controller.php');
 
 ?>
 

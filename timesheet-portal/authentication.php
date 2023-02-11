@@ -1,6 +1,6 @@
 <?php
 
-require_once('controller.php');
+require_once('./controller.php');
 
 if (!isset($_SESSION['emp_num'])) {
 

@@ -1,8 +1,8 @@
 <?php
 
-require_once('./controller.php');
 require_once('./header.php');
 require_once('./authentication.php');
+require_once('./controller.php');
 
 ?>
 

@@ -100,21 +100,21 @@ function employeeLogin($params) {
 	);
 
 	$stmt = dbAccess($params);
-
-	// declare variable to initiate row count
-	$params['rowCount'] = $stmt->rowCount();
 	$results = $stmt->fetch(PDO::FETCH_ASSOC);
 
-	if ($params['rowCount'] > 0) {
+	if ($results['emp_num'] == $params['emp_num']) {
 
+		// declare session variables
 		$_SESSION['emp_num'] 		= $params['emp_num'];
 		$_SESSION['emp_name'] 		= $results['emp_name'];
+		$_SESSION['emp_position']	= $results['emp_position'];
 		$_SESSION['punch_token'] 	= bin2hex(random_bytes(8));
 
 		header("Location: index.php");
 
 	} else {
 
+		header("Location: login.php");
 		
 	}
 
@@ -122,18 +122,12 @@ function employeeLogin($params) {
 
 }
 
-function employeeLogout($params) {
+function employeeLogout() {
 
-	$params['startup'] 	= session_start();
-    $params['shutdown'] = session_destroy();
+	session_start();
+    session_destroy();
 
-	if ($params['startup'] && $params['shutdown']) {
-
-		header("Location: login.php");
-
-	}
-
-	return $params;
+	header("Location: login.php");
 
 }
 
@@ -359,6 +353,18 @@ function singleEmployeeTimesheet($params) {
 
 	$params['dba']['s'] = "SELECT * FROM employee_punches WHERE emp_num = :emp_num";
 	$params['bindParam'] = array(':emp_num'	=> $_SESSION['emp_num']);
+    $stmt = dbAccess($params);
+
+    $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+    return $results;
+
+}
+
+function getStaffTimesheet($params) {
+
+	$params['dba']['s'] = "SELECT * FROM employee_punches WHERE emp_num = :emp_num";
+	$params['bindParam'] = array(':emp_num'	=> $_GET['emp_num']);
     $stmt = dbAccess($params);
 
     $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
