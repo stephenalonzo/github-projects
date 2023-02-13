@@ -2,7 +2,7 @@
 Projects to expect in this repository
 - Time Punch Portal [IN-PROGRESS]
 - Hotel Booking System [IN-PROGRESS]
-- Book Rental Library Stem
+- Book Rental Library System
 - Ticketing System
 
 # Technologies
