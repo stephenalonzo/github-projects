@@ -4,7 +4,10 @@ require_once('./header.php');
 require_once('./authentication.php');
 require_once('./controller.php');
 
-if (!isset($_GET['emp_num']) && !$_GET['emp_num']) {
+echo $_SESSION['pp_id'];
+
+
+if (!isset($_POST['emp_num']) && !$_POST['emp_num']) {
 
 ?>
 <!DOCTYPE html>
@@ -29,6 +32,7 @@ if (!isset($_GET['emp_num']) && !$_GET['emp_num']) {
                         <th scope="col" style="width: 192px;">Actions</th>
                     </tr>
                 </thead>
+                <form action="" method="post">
                 <tbody>
                     <?php
 
@@ -41,22 +45,18 @@ if (!isset($_GET['emp_num']) && !$_GET['emp_num']) {
                     ?>
                         <tr>
                             <td class="align-middle">
-                            <?php 
-                                
-                                
-                                echo $row['emp_name'];
-                            
-                            ?>
+                                <input type="text" name="emp_name" readonly class="form-control-plaintext" id="" value="<?php echo $row['emp_name']; ?>">
                             </td>
                             <td>
                                 <div class="d-flex justify-content-around align-items-center">
-                                    <a href="./staff-timesheets.php?emp_num=<?php echo $row['emp_num']; ?>" class="btn btn-success">View</a>
-                                    <a href="" class="btn btn-danger">Export</a>
+                                    <button type="submit" name="emp_num" value="<?php echo $row['emp_num']; ?>" class="btn btn-success">View</button>
+                                    <a href="./exportTimesheet.php?emp_num=<?php echo $row['emp_num']; ?>&emp_name=<?php echo $row['emp_name']; ?>" class="btn btn-danger">Export</a>
                                 </div>
                             </td>
                         </tr>
                     <?php } } ?>
                 </tbody>
+                </form>
             </table>
         </section>
     </main>

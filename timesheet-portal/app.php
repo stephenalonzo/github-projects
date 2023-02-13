@@ -88,49 +88,6 @@ function filterParams($dirty) {
 
 }
 
-function employeeLogin($params) {
-
-	$params = filterParams($params);
-
-	// if a row exists containing entered emp_num
-	// validate that employee exists
-	$params['dba']['s'] = "SELECT * FROM employees WHERE emp_num = :emp_num";
-	$params['bindParam'] = array(
-		':emp_num'	=> $params['emp_num']
-	);
-
-	$stmt = dbAccess($params);
-	$results = $stmt->fetch(PDO::FETCH_ASSOC);
-
-	if ($results['emp_num'] == $params['emp_num']) {
-
-		// declare session variables
-		$_SESSION['emp_num'] 		= $params['emp_num'];
-		$_SESSION['emp_name'] 		= $results['emp_name'];
-		$_SESSION['emp_position']	= $results['emp_position'];
-		$_SESSION['punch_token'] 	= bin2hex(random_bytes(8));
-
-		header("Location: index.php");
-
-	} else {
-
-		header("Location: login.php");
-		
-	}
-
-	return $params;
-
-}
-
-function employeeLogout() {
-
-	session_start();
-    session_destroy();
-
-	header("Location: login.php");
-
-}
-
 function getPayPeriod($params) {
 
 	$params = filterParams($params);
@@ -155,6 +112,71 @@ function getPayPeriod($params) {
 	}
 
 	return $params;
+
+}
+
+function employeeLogin($params) {
+
+	$params 				= filterParams($params);
+	$params['pay_period'] 	= getPayPeriod($params);
+
+	if (empty($params['emp_num'])) {
+
+		// do nothing
+
+	} else {
+
+		foreach ($params['pay_period'] as $row) {
+
+			if (date('Y-m-d') >= date('Y-m-d', strtotime($row['pp_start'])) && date('Y-m-d') <= date('Y-m-d', strtotime($row['pp_end']))) {
+
+				// if a row exists containing entered emp_num
+				// validate that employee exists
+				$params['dba']['s'] = "SELECT * FROM employees WHERE emp_num = :emp_num";
+				$params['bindParam'] = array(
+					':emp_num'	=> $params['emp_num']
+				);
+
+				$stmt = dbAccess($params);
+				$results = $stmt->fetch(PDO::FETCH_ASSOC);
+
+				if ($results['emp_num'] == $params['emp_num']) {
+
+					// declare session variables
+					$_SESSION['emp_num'] 		= $params['emp_num'];
+					$_SESSION['emp_name'] 		= $results['emp_name'];
+					$_SESSION['emp_position']	= $results['emp_position'];
+					$_SESSION['pp_id']			= $row['pp_id'];
+					$_SESSION['punch_token'] 	= bin2hex(random_bytes(8));
+
+					header("Location: index.php");
+
+				} else {
+
+					header("Location: login.php");
+		
+				}					
+				
+			} else {
+
+				// non executable
+
+			}
+
+		}
+
+		return $params;
+
+	}
+
+}
+
+function employeeLogout() {
+
+	session_start();
+    session_destroy();
+
+	header("Location: login.php");
 
 }
 
@@ -363,6 +385,8 @@ function singleEmployeeTimesheet($params) {
 
 function getStaffTimesheet($params) {
 
+	$params = filterParams($params);
+
 	$params['dba']['s'] = "SELECT * FROM employee_punches WHERE emp_num = :emp_num";
 	$params['bindParam'] = array(':emp_num'	=> $_GET['emp_num']);
     $stmt = dbAccess($params);
@@ -373,5 +397,35 @@ function getStaffTimesheet($params) {
 
 }
 
+// function getCurrentPayPeriod($params) {
+
+// 	$params = filterParams($params);
+
+// 	$params['dba']['s'] 	= "SELECT * FROM pay_period WHERE pp_id = :pp_id";
+// 	$params['bindParam']	= array(':pp_id'	=> $_SESSION['pp_id']);
+
+// 	$stmt 		= dbAccess($params);
+// 	$results 	= $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+// 	foreach ($results as $row) {
+
+// 		if (date('Y-m-d') >= date('Y-m-d', strtotime($row['pp_start'])) && date('Y-m-d') <= date('Y-m-d', strtotime($row['pp_end']))) {
+
+// 			$params['separator'] = explode(" ", $_SESSION['emp_name']);
+// 			$params['file_name'] = $params['separator'][0]."-".$params['separator'][1]."_".date("Ymd", strtotime($row['pp_start']))."-".date("Ymd", strtotime($row['pp_end'])).".csv";
+
+// 		}
+		
+		
+// 	}
+
+
+// 	// echo $params['file_name'];
+
+// 	return $params;
+
+// }
+
+// getCurrentPayPeriod($params);
 
 ?>

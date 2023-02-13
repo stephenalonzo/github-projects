@@ -26,7 +26,7 @@ require_once('./controller.php');
                         <label for="exampleFormControlInput1" class="form-label">
                             Employee Number
                         </label>
-                        <input type="text" name="emp_num" class="form-control" id="exampleFormControlInput1" placeholder="Enter your employee number">
+                        <input type="text" name="emp_num" class="form-control" id="exampleFormControlInput1" placeholder="Enter your employee number" required>
                     </div>
                     <div class="mb-3">
                         <button type="submit" name="empLogin" class="btn btn-primary">Sign In</button>
