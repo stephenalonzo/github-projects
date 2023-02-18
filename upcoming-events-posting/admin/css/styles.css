@@ -1,0 +1,358 @@
+body {
+    overflow-x: hidden !important;
+}
+
+.nicEdit-selected {
+    border: 0 none !important;
+    overflow: hidden !important;
+    outline: none !important;
+}
+
+.fc-day-grid-event {
+    margin-bottom: 5px !important;
+}
+
+.form-control-color {
+    height: 40px !important;
+}
+
+.btn-warning {
+    color: #fff !important;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.navbar-nav button {
+    background-color: none !important;
+    background: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border: 0px !important;
+}
+
+.dropdown-menu button:hover {
+    background: #eeeeee !important;
+}
+
+.dropdown-submenu a::after {
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 6px;
+    top: .8em;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: -.55em;
+    left: 100%;
+    margin-left: .1rem;
+    margin-right: .1rem;
+}
+
+.btn-info {
+    color: #fff !important;
+}
+
+#all_day,
+#event_name,
+#homePage,
+#pass {
+    background: none !important;
+    border: none !important;
+    pointer-events: none !important;
+}
+
+#area1,
+#area2 {
+    height: 150px;
+    resize: none !important;
+}
+
+.tooltip {
+    outline: none !important;
+    position: relative !important;
+    max-width: 2000px !important;
+}
+
+.tooltip .tool-content {
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.popper,
+.tooltip {
+    position: absolute;
+    z-index: 9999;
+    color: black;
+    width: 150px;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+}
+
+.style5 .tooltip {
+    background: #1E252B;
+    color: #FFFFFF;
+    max-width: 200px;
+    width: auto;
+    font-size: .8rem;
+    padding: .5em 1em;
+}
+
+.popper .popper__arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    position: absolute;
+    margin: 5px;
+}
+
+.style5 .tooltip .tooltip-arrow {
+    border-color: #1E252B;
+}
+
+.popper[x-placement^="top"],
+.tooltip[x-placement^="top"] {
+    margin-bottom: 5px;
+}
+
+.popper[x-placement^="top"] .popper__arrow,
+.tooltip[x-placement^="top"] .tooltip-arrow {
+    border-width: 5px 5px 0 5px;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    bottom: -5px;
+    left: calc(50% - 5px);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.popper[x-placement^="bottom"],
+.tooltip[x-placement^="bottom"] {
+    margin-top: 5px;
+}
+
+.tooltip[x-placement^="bottom"] .tooltip-arrow,
+.popper[x-placement^="bottom"] .popper__arrow {
+    border-width: 0 5px 5px 5px;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    top: -5px;
+    left: calc(50% - 5px);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.tooltip[x-placement^="right"],
+.popper[x-placement^="right"] {
+    margin-left: 5px;
+}
+
+.popper[x-placement^="right"] .popper__arrow,
+.tooltip[x-placement^="right"] .tooltip-arrow {
+    border-width: 5px 5px 5px 0;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    left: -5px;
+    top: calc(50% - 5px);
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.popper[x-placement^="left"],
+.tooltip[x-placement^="left"] {
+    margin-right: 5px;
+}
+
+.popper[x-placement^="left"] .popper__arrow,
+.tooltip[x-placement^="left"] .tooltip-arrow {
+    border-width: 5px 0 5px 5px;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    right: -5px;
+    top: calc(50% - 5px);
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.card-btn {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 1rem;
+}
+
+.custom-file-button input[type=file] {
+    margin-left: -2px !important;
+}
+
+.custom-file-button input[type=file]::-webkit-file-upload-button {
+    display: none;
+}
+
+.custom-file-button input[type=file]::file-selector-button {
+    display: none;
+}
+
+.custom-file-button label {
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+
+.custom-file-button:hover label {
+    background-color: #dde0e3;
+    cursor: pointer;
+}
+
+#image {
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+
+#area1 {
+    width: 100% !important;
+}
+
+.content {
+    position: relative;
+}
+
+.wrapper {
+    min-height: 80.15vh;
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 2.5rem;
+}
+
+.footer-body {
+    padding: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+option[value=""][disabled] {
+    display: none !important;
+}
+
+.event-btn .btn-primary {
+    padding: 0.55rem 1rem;
+    border: none;
+    font-weight: 600;
+    border: 1px solid #1f1b4d;
+}
+
+.event-btn .btn-primary:hover {
+    border: 1px solid #1f1b4d;
+    background-color: transparent;
+    color: #1f1b4d;
+}
+
+@media screen and (min-width: 992px) {
+    #nav {
+        display: flex;
+    }
+
+    .announcements-card {
+        height: 230px !important;
+    }
+
+    .announcements-img {
+        height: 100% !important;
+    }
+
+    .announcements-img-placeholder {
+        display: block !important;
+        height: 229px !important;
+    }
+
+    .announcements-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-body {
+        padding-bottom: 0px !important;
+    }
+
+    .card-btn {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .recent-events,
+    .recent-rfp,
+    .recent-job,
+    .total-views,
+    .recent-blogs {
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 5px 7px 5px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .recent-events,
+    .recent-rfp,
+    .recent-job,
+    .total-views,
+    .recent-blogs {
+        height: 350px;
+    }
+
+    .event-stats,
+    .rfp-stats,
+    .blog-stats {
+        position: relative;
+    }
+
+    .event-stats .table,
+    .rfp-stats .table,
+    .blog-stats .table {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 25%);
+    }
+
+    .dashboard-body .title {
+        font-size: 1.65rem;
+        font-weight: 500;
+    }
+
+    .login-form {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .login-form form {
+        width: 35%;
+        margin: 0 auto;
+    }
+
+    .total-views {
+        position: relative;
+    }
+
+    .views-stats {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}

@@ -15,7 +15,7 @@ if (isset($_SESSION['emp_number']))
         class="hidden gap-8 text-sm font-medium md:flex md:items-center"
       >
         <a class="text-gray-500" href="./">Home</a>
-        <a class="text-gray-500" href="">Time Sheet</a>
+        <a class="text-gray-500" href="./my-timesheet.php">Time Sheet</a>
       </nav>
 
       <a

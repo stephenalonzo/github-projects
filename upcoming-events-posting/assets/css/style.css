@@ -1,0 +1,444 @@
+.opd-container {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.position-0 {
+    object-position: 0% 10%;
+}
+
+.position-1 {
+    object-position: 10% 10%;
+}
+
+.position-2 {
+    object-position: 20% 10%;
+}
+
+.position-3 {
+    object-position: 30% 10%;
+}
+
+.position-4 {
+    object-position: 40% 10%;
+}
+
+.position-5 {
+    object-position: 50% 10%;
+}
+
+.position-6 {
+    object-position: 60% 10%;
+}
+
+.position-7 {
+    object-position: 70% 10%;
+}
+
+.position-8 {
+    object-position: 80% 10%;
+}
+
+.position-9 {
+    object-position: 90% 10%;
+}
+
+.position-10 {
+    object-position: 100% 10%;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.gold {
+    color: #b8860b;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+
+
+/* || cnmi-data-library.html Agency and Partner Style */
+
+.agency-height,
+.partner-height {
+    height: 110px;
+}
+
+.agency-group-item {
+    position: relative;
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #212529;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+@media (max-width: 1400px) {
+    #pub-agency a {
+        font-size: smaller;
+    }
+}
+
+
+/* || Agency and Partner Individual Page Styles*/
+
+#pub-archive h3,
+#aboutus h3 {
+    color: #B8860B;
+    font-weight: bold;
+}
+
+
+
+
+.archive-cover img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+/*
+ Create three equal columns that sits next to each other 
+..archive-cover div a img {
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 0 4px;
+
+}
+*/
+
+/* Responsive layout - makes a three column-layout instead of four columns */
+@media (max-width: 1399px) {
+    .archive-cover div a img {
+        flex: 33.33%;
+        width: 100%;
+    }
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .archive-cover div a img {
+        flex: 50%;
+        width: 100%;
+    }
+}
+
+/* Responsive layout - Zoom on archive publication imgs */
+@media (max-width: 767px) {
+    .archive-cover div a img {
+        flex: 100%;
+        width: 100%;
+    }
+}
+
+/* || Banner */
+section.banner-sub {
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px
+}
+
+section .backgrnd-img {
+    /*    min-height: 240px;*/
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat
+}
+
+section .backgrnd-img:before {
+    content: " ";
+    /*    background-color: rgba(255, 255, 255, .4);
+    */
+    position: absolute;
+    height: 240px;
+    width: 100%;
+    display: block
+}
+
+
+/* || Gallery CSS */
+.gallery-box {
+    width: 100%;
+    height: 100%;
+    max-height: 425px;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.gallery-middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-height: 383px;
+}
+
+.gallery-text {
+    width: 50%;
+    word-wrap: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.gallery-text-container {
+    max-width: 581px;
+    padding: 0px 25px;
+    flex-wrap: wrap;
+}
+
+.gallery-picture {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    height: 100%;
+    max-height: 425px;
+    flex-grow: 1;
+}
+
+.gallery-img {
+    position: relative;
+    height: 100%;
+    max-height: 425px
+}
+
+.gallery-verbiage {
+    margin-top: 10px;
+    padding: 0px;
+    flex-wrap: wrap;
+}
+
+.gallery-verbiage>p {
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: left;
+    color: #0f3d70;
+}
+
+.gallery-text-button {
+    width: 130px;
+    height: 40px;
+    min-width: 130px;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+    background-color: #0667ba;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.49;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.gallery-buttons {
+    display: flex;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.gallery-text-button:hover {
+    color: #ffffff;
+}
+
+
+
+
+/*
+.cropped {
+    width: 100%;
+    height: 465px;
+    object-fit: cover;
+}
+*/
+
+
+
+
+
+
+
+
+
+#data-library-btn .btn-primary {
+    background-color: #1f1b4d;
+    border: 1px solid;
+    color: #fff;
+}
+
+#data-library-btn .btn-primary:hover {
+    background-color: transparent;
+    border-color: #1f1b4d;
+    color: #1f1b4d;
+}
+
+#gallery-card div div img,
+#gallery-card-2 div div img,
+#gallery-card-3 div div img {
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#gallery-card {
+    min-height: 684px;
+}
+
+#gallery-card-2 {
+    min-height: 620px;
+}
+
+#gallery-card-3 {
+    min-height: 725px;
+}
+
+
+/* || About Us*/
+#aboutus,
+#aboutus p {
+    font-size: 1rem;
+}
+
+#aboutus li {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+#aboutus a {
+    font-size: 1rem;
+    color: #1f1b4d;
+    text-decoration: none;
+    font-weight: 650;
+}
+
+#pl20 h3 {
+    padding: 10px;
+}
+
+
+/* || Search Results*/
+
+#searchResult span {
+    font-size: .65rem;
+    padding-left: 5px;
+}
+
+#searchResult p {
+    padding-top: 5px;
+    font-size: 14px;
+}
+
+#searchResult {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border: 1px solid #dee2e6;
+}
+
+/* || Directory*/
+#directorySearch {
+    display: none;
+}
+
+
+#directorySearch thead {
+    background-color: #1f1b4d;
+    color: #fff;
+    text-align: center;
+}
+
+#directorySearch,
+#directorySearch a {
+    font-size: .8rem;
+}
+
+#directorySearch a {
+    text-decoration: underline;
+    color: #3768C2
+}
+
+.dir-fssm {
+    font-size: .7rem;
+}
+
+
+#directorySearch td:nth-child(4),
+#directorySearch td:nth-child(5) {
+    white-space: nowrap
+}
+
+#directorySearch td:nth-child(3) {
+    text-align: center;
+}
+
+
+#opd-carousel img {
+    object-fit: cover;
+    min-height: 400px;
+    height: 400px;
+    width: auto;
+}
+
+#opd-carousel a {
+    /*    color: #fff;*/
+    text-decoration: underline;
+}
+
+
+.opd-caption {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 90%;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    /*    background-color: #6c757d !important;*/
+    /*    color: #fff;*/
+    min-height: 170px;
+}
+
+/*
+.opd-caption p {
+    margin-top: auto;
+    margin-bottom: auto;
+}*/
+
+#opd-carousel {
+    min-height: 550px;
+}
+
+.carousel-indicators {
+    opacity: .9;
+}

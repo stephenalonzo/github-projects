@@ -10,7 +10,8 @@ require_once ('DbAccess.php');
 require_once ('UserLogin.php');
 require_once ('PunchProcess.php');
 require_once ('RetrievePayPeriod.php');
-require_once ('UserPunchData.php');
+require_once ('EmployeeData.php');
+require_once ('PunchData.php');
 require_once ('LeaveProcess.php');
 
 // ==========================================
@@ -53,7 +54,8 @@ foreach ($_REQUEST as $key => $value) {
 
         case 'apply_for_leave':
             // Uncomment to activate debugger
-            $params = leaveProcess($params);
+            // $params = leaveProcess($params);
+            leaveProcess($params);
         break;
 
     }

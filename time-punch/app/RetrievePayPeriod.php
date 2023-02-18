@@ -9,9 +9,9 @@ function getPayPeriod($params)
     $params['dba']['s'] = "SELECT * FROM pay_periods WHERE CURDATE() >= pp_start_date AND CURDATE() <= pp_end_date";
     $stmt = dbAccess($params);
 
-    $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $params['pay_period'] = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-    return $results;
+    return $params;
 
 }
 

@@ -20,7 +20,7 @@ function punchProcess($params)
 
             case 'punch_time_in':
 
-                $results = getSessionPunch($params);
+                $results = getEmployeeData($params);
 
                 foreach ($results as $row)
                 {
@@ -128,7 +128,7 @@ function punchProcess($params)
 
             case 'punch_lunch_in':
 
-                $results = getSessionPunch($params);
+                $results = getEmployeeData($params);
                 
                 foreach ($results as $row)
                 {

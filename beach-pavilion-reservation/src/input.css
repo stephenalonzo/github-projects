@@ -1,0 +1,543 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.hero {
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.7) 40%,
+            rgba(0, 0, 0, 0.4) 70%,
+            rgba(0, 0, 0, 0) 100%), url('../assets/img/dlnr-hero.jpg');
+    background-position: center 15%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.input-icon {
+    position: absolute;
+    top: calc(50% - 0.5em);
+    right: 10px;
+    color: rgb(120, 120, 120, 0.5);
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+/* ||agriculture page code */
+.ag-card {
+    background-image: url('../assets/img/ag/ag5.jpg');
+    /* background-repeat: no-repeat;
+    background-size: cover;*/
+} 
+
+.ag-animal {
+    background-image: url('../assets/img/ag/animal-clinic2.jpeg');
+    /* background-repeat: no-repeat;
+    background-size: cover;*/
+} 
+.ag-hemp {
+    background-image: url('../assets/img/ag/hemp.jpeg');
+    /* background-repeat: no-repeat;
+    background-size: cover;*/
+} 
+.ag-foodsecurity {
+    background-image: url('../assets/img/ag/food-security.jpeg');
+    /* background-repeat: no-repeat;
+    background-size: cover;*/
+} 
+.ag-zerowaste {
+    background-image: url('../assets/img/ag/zero-waste.jpeg');
+    /* background-repeat: no-repeat;
+    background-size: cover;*/
+} 
+.ag-farmplot {
+    background-image: url('../assets/img/ag/farm-plot.jpeg');
+    /* background-repeat: no-repeat;
+    background-size: cover;*/
+} 
+.ag-malafala {
+    background-image: url('../assets/img/ag/malafala.jpeg');
+    /* background-repeat: no-repeat;
+    background-size: cover;*/
+} 
+.ag-specialtycrop {
+    background-image: url('../assets/img/ag/specialty-crop.jpeg');
+    /* background-repeat: no-repeat;
+    background-size: cover;*/
+} 
+.ag-forestry {
+    background-image: url('../assets/img/ag/forestry.jpeg');
+    /* background-repeat: no-repeat;
+    background-size: cover;*/
+} 
+
+.ag-hero {
+    background-image: linear-gradient(to right top, rgba(0, 0, 0, 0.8) 0%,  rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.6) 100%), url('../assets/img/agriculture.jpg');
+    background-position: center 15%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pr-hero {
+    background-image: linear-gradient(to right top, rgba(0, 0, 0, 0.8) 0%,  rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.6) 100%), url('../assets/img/pr-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sec-hero {
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0.7) 0%,
+            rgba(0, 0, 0, 0.4) 50%,
+            rgba(0, 0, 0, 0.5) 100%), url('../assets/img/dlnr-hero.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.dfw-hero {
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.7) 40%,
+            rgba(0, 0, 0, 0.4) 70%,
+            rgba(0, 0, 0, 0) 100%), url('../assets/img/fish-and-wildlife-hero.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.swiper-pagination-bullet-active {
+    background: rgb(68 128 76) !important;
+}
+
+.ag-content {
+    @apply relative h-full w-full
+}
+
+.ag-content > .container {
+    @apply relative
+}
+
+.ag-content::before {
+    content: "";
+    background-image: url('../assets/img/ag/ag3.jpg');
+    @apply bg-repeat bg-top absolute opacity-5 top-0 right-0 left-0 bottom-0
+}
+
+.card {
+    @apply relative inline-block bg-no-repeat bg-cover
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: linear-gradient(to right top,
+            rgba(17, 24, 39, 0.5),
+            rgba(75, 85, 99, 0.6))
+}
+
+.card:hover::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: linear-gradient(to right top,
+            rgb(68, 128, 76, 0.8) 0%,
+            rgb(68, 128, 76, 0.6) 40%,
+            rgb(68, 128, 76, 0.4) 70%,
+            rgb(68, 128, 76, 0) 100%);
+
+}
+
+
+/* ||agriculture page code */
+
+/* Nav  & Hamburger Menu */
+.hamburger {
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+nav ul{
+    @apply mobile:hidden
+}
+
+#nav{
+    @apply md:flex mdOnly:flex-col items-center justify-between font-bold text-gray-200 mobile:pt-5 mobile:pr-5
+}
+
+#navLinks{
+    @apply relative mobile:fixed mobile:h-full mobile:top-0 mobile:bottom-0 mobile:left-0 mobile:flex-col mobile:w-full mobile:overflow-auto mobile:pt-40 mobile:space-y-5 mobile:bg-gray-800 md:space-x-8
+}
+
+#nav label{
+    @apply p-0
+}
+
+.mainLinks{
+    @apply md:float-left md:inline-block md:my-2 mobile:block mobile:w-3/4 mobile:mx-auto mobile:text-lg mobile:items-center z-50
+    /* @apply md:float-left md:inline-block md:my-2 mobile:block mobile:w-3/4 mobile:mx-auto px-5 mobile:text-lg mobile:items-center z-30 */
+}
+
+.mainLinks a{
+    @apply  md:leading-10 md:py-0 md:hover:text-sky-400 mobile:hover:text-sky-600 mobile:hover:shadow-none hover:cursor-pointer mobile:py-1
+}
+
+.navBtn{
+    @apply text-white z-50 py-1 md:px-5 md:float-left md:inline-block md:my-2 md:leading-10 md:py-0 md:hover:text-purple-200 block mobile:w-3/4 mobile:mx-auto mobile:text-lg mobile:items-center mobile:hover:text-purple-200 mobile:hover:shadow-none hover:cursor-pointer bg-purple-900 text-center rounded-3xl
+}
+
+.mainLinks:hover>.dropDownMenu,
+.mainLinks:hover>.dropDownMenuXL{
+    @apply opacity-100 visible
+}
+
+.dropDownMenu{
+    @apply absolute w-2/5 px-2 border-t-2 border-solid border-sky-600 opacity-0 invisible md:bg-gray-700 mobile:top-16 mobile:border-t-0 mobile:float-none mobile:static mobile:hidden mobile:opacity-100 mobile:visible mobile:w-full mobile:pl-5 mobile:mt-2
+}
+
+.dropDownMenuXL{
+    @apply right-0 w-11/12 absolute border-t-2 border-solid border-sky-600 opacity-0 invisible md:bg-gray-700 mobile:top-16 mobile:border-t-0 mobile:float-none mobile:static mobile:hidden mobile:opacity-100 mobile:visible  mobile:mt-2 mdOnly:w-full mobile:pl-4 
+}
+
+.ddmLinks{
+    @apply relative md:m-0 md:w-auto md:float-none md:border-b-2 md:border-solid md:border-black/20 mobile:w-full mobile:space-x-2
+}
+
+.ddmLinks a{
+    @apply leading-10 hover:shadow-none
+}
+
+
+/* mobile */
+.hamburger{
+    @apply mobile:block mobile:text-gray-200 mobile:right-5 cursor-pointer text-xl
+}
+
+#menu-toggle .fa-times{
+    @apply mobile:fixed mobile:z-50 mobile:pr-10
+}
+
+.show{
+    @apply mobile:block mobile:py-5 mobile:cursor-pointer mobile:hover:text-sky-600
+}
+
+.show+a{
+    @apply mobile:hidden
+}
+
+.btn:checked+ul{
+    @apply mobile:block
+}
+
+
+/* Nav  & Hamburger Menu */
+
+/*|| News and Announcements */
+
+
+/* News and Announcements */
+
+
+.agr {
+    background: url('../assets/img/agriculture.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.agr:hover {
+    background: url('../assets/img/agriculture.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lrs {
+    background: url('../assets/img/land-surveyor.jpg');
+    background-position: center 15%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lrs:hover {
+    background: url('../assets/img/land-surveyor.jpg');
+    background-position: center 15%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rec {
+    background: url('../assets/img/american-memorial-park.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rec:hover {
+    background: url('../assets/img/american-memorial-park.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fwl {
+    background: url('../assets/img/ocean-wildlife.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fwl:hover {
+    background: url('../assets/img/ocean-wildlife.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ends {
+    background: url('../assets/img/saipan-bird.jpg');
+    background-position: center 15%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ends:hover {
+    background: url('../assets/img/saipan-bird.jpg');
+    background-position: center 15%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.seat {
+    background: url('../assets/img/saipan-turtle.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.seat:hover {
+    background: url('../assets/img/saipan-turtle.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.invs {
+    background: url('../assets/img/brown-tree-snake.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.invs:hover {
+    background: url('../assets/img/brown-tree-snake.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.marc {
+    background: url('../assets/img/reef.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.marc:hover {
+    background: url('../assets/img/reef.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scrollToTopBtn {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all .5s ease;
+}
+
+.showBtn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* || DLRS Code */
+.surveyBg{
+    background-image: url(../assets/img/dlrs-team.jpeg);
+    background-size: cover;
+    background-position: bottom;
+}
+/* End of DLRS */
+
+option[value=""][disabled] {
+    display: none !important;
+}
+
+.fc-event {
+    @apply p-1 pl-2 bg-gray-100 rounded-none text-black border-l-4 border-r-0 border-b-0 border-t-0
+}
+
+.fc-unthemed td.fc-today {
+    @apply bg-gray-200/75
+}
+
+.fc-header-toolbar {
+    @apply flex flex-row items-center justify-between md:block
+}
+
+.fc-clear {
+    @apply hidden
+}
+
+.fc-toolbar .fc-left h2 {
+    @apply font-bold md:text-2xl
+}
+
+.fc-toolbar .fc-center h2 {
+    @apply font-bold md:text-2xl
+}
+
+.fc-toolbar .fc-center {
+    @apply hidden md:inline-block
+}
+
+.fc-footer-toolbar {
+    @apply md:hidden
+}
+
+.fc-content-skeleton {
+    @apply lg:min-h-[93px]
+}
+
+.day-highlight {
+    @apply bg-[#bce8f1]
+}
+
+/* MVariety/Tribune RSS Feed */
+.rss-feed-variety id,
+.rss-feed-variety author>name,
+.rss-feed-variety author>email,
+.rss-feed-variety author>uri,
+.rss-feed-tribune img,
+.rss-feed-variety .dsq-postid,
+.rss-feed-tribune .dsq-postid,
+.rss-feed-variety .card-meta ul>.card-byline.text-muted,
+.rss-feed-variety .card-meta ul>.card-date:nth-child(3),
+.rss-feed-variety .card-comment-count,
+.rss-feed-variety .asset-icon,
+.rss-feed-variety updated,
+.rss-feed-variety published,
+.rss-feed-tribune .blog-author,
+.rss-feed-tribune .blog-date,
+.rss-feed-variety a[aria-label="True story"] {
+    @apply hidden
+}
+
+.rss-feed-variety entry {
+    @apply list-none p-0
+}
+
+.rss-feed-variety entry>title,
+.rss-feed-tribune .blog-title {
+    @apply font-bold text-lg
+}
+
+.rss-feed-variety,
+.rss-feed-tribune {
+    @apply space-y-4
+}
+
+.rss-feed-variety .card-body,
+.rss-feed-tribune .blog-context-wrapper {
+    @apply py-2
+}
+
+.rss-feed-variety entry,
+.rss-feed-tribune .blog-content-wrapper {
+    @apply px-4 py-0
+}
+
+.rss-feed-variety .tnt-asset-link {
+    @apply pointer-events-none
+}
+
+.rss-feed-variety title {
+    @apply block
+}
+
+@media print {
+
+    @page {
+        width: 1100px !important; height: 800px !important; overflow: hidden !important;
+    }
+    .data-view {
+        display: none;
+    }
+
+    body {
+        font-family: 'Inter', sans-serif !important;
+    }
+}
+
+/* Sticky Footer */
+
+.page-container {
+    @apply relative min-h-screen
+}
+
+.page-wrapper {
+    @apply pb-10
+}
+
+.sticky-footer {
+    @apply absolute bottom-0 w-full h-10
+}
+
+@media only screen and (min-width: 992px) {
+    @layer components {
+        .container {
+            @apply max-w-screen-md
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    @layer components {
+        .container {
+            @apply max-w-screen-lg
+        }
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    @layer components {
+        .container {
+            @apply max-w-screen-xl
+        }
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    @layer components {
+        .container {
+            @apply max-w-screen-xxl
+        }
+    }
+}
+

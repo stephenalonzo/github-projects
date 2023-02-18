@@ -1,0 +1,1868 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <title>Beach Advisory Results - Division of Environmental Quality</title>
+
+
+    <!-- CSS for this site -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/brands.min.css">
+    <link rel="stylesheet" href="./assets/css/solid.min.css">
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/sticky-footer-navbar.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="icon" href="./assets/img/becq-logo.png" />
+
+    <!--Required .js file to load nav&footer *MUST BE IN HEAD-->
+    <script src="./assets/js/jquery-3.6.0.js"></script>
+    <script src="./assets/js/bootnavbar.js"></script>
+    <script>
+        $(document).ready(function () {
+            if (window.location.hash) {
+                setTimeout(function () {
+                    $('html, body').scrollTop(0).show();
+                    $('html, body').animate({
+                        scrollTop: $(window.location.hash).offset().top
+                    }, 0)
+                }, 0);
+            }
+
+        });
+    </script>
+</head>
+
+<body class="d-flex flex-column">
+    <header class="sticky-top">
+        <!-- nav -->
+        <div id="nav"></div>
+        <!-- nav -->
+    </header>
+    <!--Contains Navbar-->
+
+    <!-- Begin page content -->
+    <main class="h-100" id="bar">
+        <section class="hero">
+            <div class="hero-body" id="logo">
+                <img src="./assets/img/home/deq.jpg" alt="DEQ Logo" />
+                <h2 class="fw-bold">
+                    <span class="fst-italic fw-lighter"> Hafa Adai and Tirow! Welcome to the</span>
+                    Division of Environmental Quality - Bureau of Environmental and
+                    Coastal Quality website.
+                </h2>
+            </div>
+        </section>
+
+        <div class="w-75 centered">
+            <a href="./beach-advisories.html">
+                <h3 class="fw-bold text-center py-4">Beach Advisory Results</h3>
+            </a>
+
+            <div>
+                <p>
+                    Should the water quality results from a beach site or other
+                    monitored stream site exceed the CNMI Water Quality Microbial
+                    Standards, a Public Beach Advisory, or "red flag" is posted in
+                    social media, such as it is here on the DEQ website, and on the
+                    <a href="https://www.facebook.com/cnmi.waters/?fref=ts" target="_blank">CNMI Waters Facebook
+                        page</a>. It is also emailed to various agencies and individuals who
+                    <a href="mailto:waterqualityreport@becq.gov.mp?subject=Beach Advisory Email List sign up request">ask
+                        to be on the email list</a>, and faxed to local papers for publication. Red Flag placards are
+                    also posted on beach signs located at Saipan's most frequented
+                    beaches.
+                </p>
+                <p>
+                    If a "red flag" occurs in an area that is highly used, like in front
+                    of hotels, WQS/NPS staff will go to the beach that same day to
+                    resample the beach. This allows BECQ to notify the public as soon as
+                    possible when potential pathogens are no longer present and it is
+                    once again safe to recreate in these waters.
+                </p>
+                <p>
+                    Many of the selected beach sites have been monitored continuously
+                    since the late 1980's. That is why some beach sites bare the name of
+                    an old hotel that has since been renamed under new ownership. The
+                    original site names are used to ensure that these sites remain
+                    associated with historical data kept within the BECQ database and in
+                    the US EPA databases, and US EPA BEACON website. You can visit the
+                    <a href="http://watersgeo.epa.gov/beacon2/" target="_blank">US EPA BEACON website</a>
+                    to view historical information about your favorite beach site or you
+                    can review the last two years of water quality information in the
+                    biennial CNMI 305(b) and 303(d) Water Quality Assessment Integrated
+                    Report. Below you will find the most recent listing of water quality
+                    results collected by the WQS/NPS staff.
+                </p>
+            </div>
+
+            <hr>
+
+            <div class="row pt-4">
+                <div class="col-6 img-centered">
+                    <img src="./assets/img/beachadvisory/greenflag.jpg" alt="Beach Advisory green flag sign" />
+                </div>
+                <div class="col-6 img-centered">
+                    <img src="./assets/img/beachadvisory/redflag.jpg" alt="Beach advisory red flag sign" />
+                </div>
+                <p class="text-center fw-bold p-2">Beach Advisory Signs</p>
+            </div>
+
+            <section id="ba-list">
+                <div id="data"></div>
+                <script>
+                    $(function () {
+                        $("#data").load("./beach-advisory-results.php");
+                    });
+                </script>
+                <div>
+                    <!--                   5/4-->
+                    <hr>
+                    <div class="ba">
+                        <h4>Marine Quality Report for the week of May 04, 2022</h4>
+                        <div>
+                            <p>MANAGAHA MARINE WATER QUALITY REPORT</p>
+                            <h4 class="green-flag"></h4>
+                            <p>The Bureau of Environmental and Coastal Quality (BECQ) analyzes water samples
+                                collected from Saipan's east and south recreational beaches this week as part of
+                                the
+                                regularly scheduled sampling. None of the samples collected contained excessive
+                                concentration of fecal indicator bacteria nor did they exceed the CNMI Marine
+                                Water
+                                Quality Standards. Therefore, BECQ assigns the following sampled beach sites a
+                                <span class="green-flag"></span>.
+                                <strong>Enjoy our waters!</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <!--                    5/3-->
+                    <div class="ba">
+                        <hr>
+                        <h4>Marine Quality Report for the week of May 03, 2022</h4>
+                        <div>
+                            <p>SAIPAN WEST BEACH MARINE WATER QUALITY REPORT</p>
+                            <h4 class="green-flag"></h4>
+                            <p>The Bureau of Environmental and Coastal Quality (BECQ) analyzed marine water samples
+                                collected from <a href="./assets/img/beachadvisory/spn-west.jpg"
+                                    target="_blank">Saipan's recreational western beaches</a> and storm drainages
+                                every week as part of a regularly scheduled sampling program. None of
+                                the samples collected from Saipan's west beaches contained excessive concentration
+                                of fecal indicator bacteria
+                                nor did they exceed the CNMI Marine Water Quality Standards. Therefore, BECQ assigns
+                                all of the sampled beach sites a <span class="green-flag"></span>. Enjoy our waters!</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="apr2022">
+                    <!--                   4/28-->
+                    <div class="ba">
+                        <hr>
+                        <h4>Marine Quality Report for the week of April 28, 2022</h4>
+                        <div>
+                            <p>MANAGAHA MARINE WATER QUALITY REPORT</p>
+                            <h4 class="green-flag"></h4>
+                            <p>The Bureau of Environmental and Coastal Quality (BECQ) analyzes water samples
+                                collected from Saipan's east and south recreational beaches this week as part of
+                                the
+                                regularly scheduled sampling. None of the samples collected contained excessive
+                                concentration of fecal indicator bacteria nor did they exceed the CNMI Marine
+                                Water
+                                Quality Standards. Therefore, BECQ assigns the following sampled beach sites a
+                                <span class="green-flag"></span>.
+                                <strong>Enjoy our waters!</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <!--                        4/27-->
+                    <div class="ba">
+                        <hr>
+                        <h4>Marine Quality Report for the week of April 27, 2022</h4>
+                        <div>
+                            <p>TINIAN BEACHES MARINE QUALITY REPORT</p>
+                            <h4 class="red-flag"></h4>
+                            <p>The Division of Environmental Quality (DEQ) analyzed water samples collected this
+                                week from <a href="./assets/img/beachadvisory/tinian.jpg">Tinian's recreational
+                                    beaches</a> and storm drainages. Samples collected from
+                                the following locations contained excessive concentrations of fecal indicator
+                                bacteria (enterococci) that exceeded the CNMI Marine Water Quality Standards.
+                                These
+                                bacteria can indicate the presence of human and animal waste in the water.
+                                <strong>However, studies have shown that storm water runoff in tropical
+                                    environments
+                                    may also contain these bacteria from the natural environment</strong>, which
+                                may
+                                not be directly associated with public health concerns. Therefore, In order to
+                                adequately address public health concerns, DEQ has given the following locations
+                                a
+                                <span class="red-flag"></span> and advises the public <strong>not to fish or
+                                    swim
+                                    within 300 feet of these locations for the next 48 hours or until otherwise
+                                    notified</strong>.
+                            </p>
+                            <div class="w-75 mx-auto">
+                                <table class="table table-borderless ba-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>LEPROSARIUM I (T05)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--                        4/26-->
+                    <div class="ba">
+                        <hr>
+                        <h4>Marine Quality Report for the week of April 26, 2022</h4>
+                        <div>
+                            <p>SAIPAN WEST BEACH MARINE WATER QUALITY REPORT</p>
+                            <h4 class="green-flag"></h4>
+                            <p>The Bureau of Environmental and Coastal Quality (BECQ) analyzed marine water samples
+                                collected from <a href="./assets/img/beachadvisory/spn-west.jpg"
+                                    target="_blank">Saipan's recreational western beaches</a> and storm drainages
+                                every week as part of a regularly scheduled sampling program. None of
+                                the samples collected from Saipan's west beaches contained excessive concentration
+                                of fecal indicator bacteria
+                                nor did they exceed the CNMI Marine Water Quality Standards. Therefore, BECQ assigns
+                                all of the sampled beach sites a <span class="green-flag"></span>. Enjoy our waters!
+                            </p>
+                        </div>
+                    </div>
+                    <!--                    4/21-->
+                    <div class="ba">
+                        <hr>
+                        <h4>Marine Quality Report for the week of April 21, 2022</h4>
+                        <div>
+                            <p>ROTA MARINE WATER QUALITY REPORT</p>
+                            <h4 class="green-flag"></h4>
+                            <p>The Bureau of Environmental and Coastal Quality (BECQ) analyzed marine water samples
+                                collected from <a href="./assets/img/beachadvisory/rota.jpg" target="_blank">Rota's
+                                    recreational beaches</a> and storm drainages this week. None of
+                                the samples collected contained excessive concentration of fecal indicator bacteria
+                                nor did they exceed the CNMI Marine Water Quality Standards. Therefore, BECQ assigns
+                                all of the sampled beach sites a <span class="green-flag"></span>. Enjoy our waters!
+                            </p>
+                        </div>
+                    </div>
+                    <!--                    4/20-->
+                    <div class="ba">
+                        <hr>
+                        <h4>Marine Quality Report for the week of April 20, 2022</h4>
+                        <div>
+                            <p>ROTA MARINE QUALITY REPORT</p>
+                            <h4 class="red-flag"></h4>
+                            <p>
+                                The Division of Environmental Quality (DEQ) analyzed water samples collected
+                                from <a href="./assets/img/beachadvisory/rota.jpg" target="_blank">Rota's
+                                    recreational beaches and storm drainages</a>. Samples collected from the
+                                following locations contained excessive concentrations of fecal indicator
+                                bacteria (enterococci) that exceeded the CNMI Marine Water Quality Standards.
+                                These bacteria can indicate the presence of human and animal waste in the water.
+                                <strong>However, studies have shown that storm water runoff in tropical
+                                    environments may also contain these bacteria from the natural
+                                    environment,</strong> which may not be directly associated with public
+                                health concerns. Therefore, In order to adequately address public health
+                                concerns, DEQ has given the following locations a <span class="red-flag"></span>
+                                and advises the public <strong>not to fish or swim within 300 feet of these
+                                    locations for the next 48 hours or until otherwise notified.</strong>
+                            </p>
+                            <ul class="list-unstyled fw-bold text-center">
+                                <li>DIST #2 DRAINAGE (R07)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 04/20 -->
+                    <div class="ba">
+                        <hr>
+                        <h4>Marine Quality Report for the week of April 20, 2022</h4>
+                        <div>
+                            <p>TINIAN BEACHES MARINE QUALITY REPORT</p>
+                            <h4 class="red-flag"></h4>
+                            <p>The Division of Environmental Quality (DEQ) analyzed water samples collected this
+                                week from <a href="./assets/img/beachadvisory/tinian.jpg">Tinian's recreational
+                                    beaches</a> and storm drainages. Samples collected from
+                                the following locations contained excessive concentrations of fecal indicator
+                                bacteria (enterococci) that exceeded the CNMI Marine Water Quality Standards.
+                                These
+                                bacteria can indicate the presence of human and animal waste in the water.
+                                <strong>However, studies have shown that storm water runoff in tropical
+                                    environments
+                                    may also contain these bacteria from the natural environment</strong>, which
+                                may
+                                not be directly associated with public health concerns. Therefore, In order to
+                                adequately address public health concerns, DEQ has given the following locations
+                                a
+                                <span class="red-flag"></span> and advises the public <strong>not to fish or
+                                    swim
+                                    within 300 feet of these locations for the next 48 hours or until otherwise
+                                    notified</strong>.
+                            </p>
+                            <div class="w-75 mx-auto">
+                                <table class="table table-borderless ba-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>LEPROSARIUM I (T05)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>LEPROSARIUM II (T06)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--04/19-->
+                    <div class="ba">
+                        <hr>
+                        <h4>Marine Quality Report for the week of April 19, 2022</h4>
+                        <div>
+                            <p>SAIPAN WEST BEACH MARINE WATER QUALITY REPORT</p>
+                            <h4 class="red-flag"></h4>
+                            <p>The Division of Environmental Quality (DEQ) analyzed water samples collected from
+                                <a href="./assets/img/beachadvisory/spn-west.jpg">
+                                    Saipan's west coast recreational beaches
+                                </a> and storm drainages every week. Samples collected from the following
+                                locations
+                                contained excessive
+                                concentrations of fecal indicator bacteria (enterococci) that exceeded the CNMI
+                                Marine Water Quality Standards. These bacteria can indicate the presence of
+                                human
+                                and animal waste in the water. <strong>However, studies have shown that storm
+                                    water
+                                    runoff in tropical environments may also contain these bacteria from the
+                                    natural environment,</strong> which may not be directly associated with
+                                public
+                                health
+                                concerns. Therefore, In order to adequately address public health concerns, DEQ
+                                has
+                                given the
+                                following locations a <span class="red-flag"></span> and advises the public
+                                <strong>not to
+                                    fish or swim within 300 feet of
+                                    these locations for the next 48 hours or until otherwise notified.</strong>
+                            </p>
+                            <div class="w-75 mx-auto">
+                                <table class="table table-borderless ba-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>GROTTO (NEB01)</td>
+                                            <td>DRAINAGE #2 (WB20)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TANAPAG MEETING HALL (WB07)</td>
+                                            <td>GARAPAN FISHING BASE (WB21)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>AMP DRAINAGE (WB12.1)</td>
+                                            <td>DRAINAGE #3 (WB23)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GRANDVRIO HOTEL (WB19)</td>
+                                            <td>GARAPAN BEACH (WB22)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--04/14-->
+                    <div class="ba">
+                        <hr>
+                        <h4>Marine Quality Report for the week of April 14, 2022</h4>
+                        <div>
+                            <p>TINIAN MARINE WATER QUALITY REPORT</p>
+                            <h4 class="green-flag"></h4>
+                            <p>
+                                The Bureau of Environmental and Coastal Quality (BECQ) analyzed (10) water
+                                samples
+                                collected from <a href="./assets/img/beachadvisory/tinian.jpg" target="_blank">Tinian’s
+                                    recreational beaches</a> and storm water drainages
+                                this
+                                week as part of the regularly scheduled sampling. None of the samples collected
+                                contained excessive concentration of fecal indicator bacteria nor did they
+                                exceed
+                                the CNMI Marine Water Quality Standards. Therefore, BECQ assigns all of the
+                                sampled
+                                beach sites a <span class="green-flag"></span>. Enjoy our waters!
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--04/13-->
+                    <div class="ba">
+                        <hr>
+                        <h4>Marine Quality Report for the week of April 13, 2022</h4>
+                        <div>
+                            <p>MANAGAHA MARINE WATER QUALITY REPORT</p>
+                            <h4 class="green-flag"></h4>
+                            <p>The Bureau of Environmental and Coastal Quality (BECQ) analyzes water samples
+                                collected from Saipan's east and south recreational beaches this week as part of
+                                the
+                                regularly scheduled sampling. None of the samples collected contained excessive
+                                concentration of fecal indicator bacteria nor did they exceed the CNMI Marine
+                                Water
+                                Quality Standards. Therefore, BECQ assigns the following sampled beach sites a
+                                <span class="green-flag"></span>.
+                                <strong>Enjoy our waters!</strong>
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!--04/12-->
+                    <div class="ba">
+                        <hr>
+                        <h4>Marine Quality Report for the week of April 12, 2022</h4>
+                        <div>
+                            <p>SAIPAN WEST BEACH MARINE WATER QUALITY REPORT</p>
+                            <h4 class="red-flag"></h4>
+                            <p>The Division of Environmental Quality (DEQ) analyzed water samples collected from
+                                <a href="./assets/img/beachadvisory/spn-west.jpg">
+                                    Saipan's west coast recreational beaches
+                                </a> and storm drainages every week. Samples collected from the following
+                                locations
+                                contained excessive
+                                concentrations of fecal indicator bacteria (enterococci) that exceeded the CNMI
+                                Marine Water Quality Standards. These bacteria can indicate the presence of
+                                human
+                                and animal waste in the water. <strong>However, studies have shown that storm
+                                    water
+                                    runoff in tropical environments may also contain these bacteria from the
+                                    natural environment,</strong> which may not be directly associated with
+                                public
+                                health
+                                concerns. Therefore, In order to adequately address public health concerns, DEQ
+                                has
+                                given the
+                                following locations a <span class="red-flag"></span> and advises the public
+                                <strong>not to
+                                    fish or swim within 300 feet of
+                                    these locations for the next 48 hours or until otherwise notified.</strong>
+                            </p>
+                            <div class="w-75 mx-auto">
+                                <table class="table table-borderless ba-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>AMP DRAINAGE (WB12.1)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GARAPAN FISHING BASE (WB21)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--04/07-->
+                    <div class="ba">
+                        <hr>
+                        <h4>Marine Quality Report for the week of April 07, 2022</h4>
+                        <div>
+                            <p>MANAGAHA MARINE WATER QUALITY REPORT</p>
+                            <h4 class="green-flag"></h4>
+                            <p>The Bureau of Environmental and Coastal Quality (BECQ) analyzes water samples
+                                collected from Saipan's east and south recreational beaches this week as part of
+                                the
+                                regularly scheduled sampling. None of the samples collected contained excessive
+                                concentration of fecal indicator bacteria nor did they exceed the CNMI Marine
+                                Water
+                                Quality Standards. Therefore, BECQ assigns the following sampled beach sites a
+                                <span class="green-flag"></span>.
+                                <strong>Enjoy our waters!</strong>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--04/06-->
+                    <div class="ba">
+                        <hr>
+                        <h4>Marine Quality Report for the week of April 06, 2022</h4>
+                        <div>
+                            <p>SAIPAN EAST BEACHES MARINE WATER QUALITY REPORT</p>
+                            <h4 class="green-flag"></h4>
+                            <p>The Bureau of Environmental and Coastal Quality (BECQ) analyzes water samples
+                                collected from <a href="./assets/img/beachadvisory/spn-east.jpg"
+                                    target="_blank">Saipan's
+                                    east and south</a> recreational beaches this week as part of the
+                                regularly scheduled sampling. None of the samples collected contained excessive
+                                concentration of fecal indicator bacteria nor did they exceed the CNMI Marine
+                                Water
+                                Quality Standards. Therefore, BECQ assigns the following sampled beach sites a
+                                <span class="green-flag"></span>.
+                                <strong>Enjoy our waters!</strong>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--04/06-->
+                    <div class="ba">
+                        <hr>
+                        <h4>Marine Quality Report for the week of April 06, 2022</h4>
+                        <div>
+                            <p>TINIAN MARINE WATER QUALITY REPORT</p>
+                            <h4 class="green-flag"></h4>
+                            <p>
+                                The Bureau of Environmental and Coastal Quality (BECQ) analyzed (10) water
+                                samples
+                                collected from <a href="./assets/img/beachadvisory/tinian.jpg" target="_blank">Tinian’s
+                                    recreational beaches</a> and storm water drainages
+                                this
+                                week as part of the regularly scheduled sampling. None of the samples collected
+                                contained excessive concentration of fecal indicator bacteria nor did they
+                                exceed
+                                the CNMI Marine Water Quality Standards. Therefore, BECQ assigns all of the
+                                sampled
+                                beach sites a <span class="green-flag"></span>. Enjoy our waters!
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--04/05-->
+                    <div class="ba">
+                        <hr>
+                        <h4>Marine Quality Report for the week of April 05, 2022</h4>
+                        <div>
+                            <p>SAIPAN WEST BEACH MARINE WATER QUALITY REPORT</p>
+                            <h4 class="red-flag"></h4>
+                            <p>The Division of Environmental Quality (DEQ) analyzed water samples collected from
+                                <a href="./assets/img/beachadvisory/spn-west.jpg">
+                                    Saipan's west coast recreational beaches
+                                </a> and storm drainages every week. Samples collected from the following
+                                locations
+                                contained excessive
+                                concentrations of fecal indicator bacteria (enterococci) that exceeded the CNMI
+                                Marine Water Quality Standards. These bacteria can indicate the presence of
+                                human
+                                and animal waste in the water. <strong>However, studies have shown that storm
+                                    water
+                                    runoff in tropical environments may also contain these bacteria from the
+                                    natural environment,</strong> which may not be directly associated with
+                                public
+                                health
+                                concerns. Therefore, In order to adequately address public health concerns, DEQ
+                                has
+                                given the
+                                following locations a <span class="red-flag"></span> and advises the public
+                                <strong>not to
+                                    fish or swim within 300 feet of
+                                    these locations for the next 48 hours or until otherwise notified.</strong>
+                            </p>
+                            <div class="w-75 mx-auto">
+                                <table class="table table-borderless ba-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>AMP DRAINAGE (WB12.1)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GARAPAN FISHING BASE (WB21)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="mar2022">
+                    <!--03/31-->
+                    <div class="ba">
+                        <hr>
+                        <h4>Marine Quality Report for the week of March 31, 2022</h4>
+                        <div>
+                            <p>MANAGAHA MARINE WATER QUALITY REPORT</p>
+                            <h4 class="green-flag"></h4>
+                            <p>The Bureau of Environmental and Coastal Quality (BECQ) analyzes water samples
+                                collected from Saipan's east and south recreational beaches this week as part of
+                                the
+                                regularly scheduled sampling. None of the samples collected contained excessive
+                                concentration of fecal indicator bacteria nor did they exceed the CNMI Marine
+                                Water
+                                Quality Standards. Therefore, BECQ assigns the following sampled beach sites a
+                                <span class="green-flag"></span>.
+                                <strong>Enjoy our waters!</strong>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--03/29-->
+                    <div class="ba">
+                        <hr>
+                        <h4>Marine Quality Report for the week of March 29, 2022</h4>
+                        <div>
+                            <p>SAIPAN WEST BEACH MARINE WATER QUALITY REPORT</p>
+                            <h4 class="red-flag"></h4>
+                            <p>The Division of Environmental Quality (DEQ) analyzed water samples collected from
+                                <a href="./assets/img/beachadvisory/spn-west.jpg">
+                                    Saipan's west coast recreational beaches
+                                </a> and storm drainages every week. Samples collected from the following
+                                locations
+                                contained excessive
+                                concentrations of fecal indicator bacteria (enterococci) that exceeded the CNMI
+                                Marine Water Quality Standards. These bacteria can indicate the presence of
+                                human
+                                and animal waste in the water. <strong>However, studies have shown that storm
+                                    water
+                                    runoff in tropical environments may also contain these bacteria from the
+                                    natural environment,</strong> which may not be directly associated with
+                                public
+                                health
+                                concerns. Therefore, In order to adequately address public health concerns, DEQ
+                                has
+                                given the
+                                following locations a <span class="red-flag"></span> and advises the public
+                                <strong>not to
+                                    fish or swim within 300 feet of
+                                    these locations for the next 48 hours or until otherwise notified.</strong>
+                            </p>
+                            <div class="w-75 mx-auto">
+                                <table class="table table-borderless ba-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>OUTER COVE MARINA (WB13)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SMILING COVE MARINA (WB12)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>AMP DRAINAGE (WB12.1)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--03/29-->
+                    <div class="ba">
+                        <hr>
+                        <h4>Marine Quality Report for the week of March 29, 2022</h4>
+                        <div>
+                            <p>TINIAN MARINE WATER QUALITY REPORT</p>
+                            <h4 class="green-flag"></h4>
+                            <p>
+                                The Bureau of Environmental and Coastal Quality (BECQ) analyzed (10) water
+                                samples
+                                collected from <a href="./assets/img/beachadvisory/tinian.jpg" target="_blank">Tinian’s
+                                    recreational beaches</a> and storm water drainages
+                                this
+                                week as part of the regularly scheduled sampling. None of the samples collected
+                                contained excessive concentration of fecal indicator bacteria nor did they
+                                exceed
+                                the CNMI Marine Water Quality Standards. Therefore, BECQ assigns all of the
+                                sampled
+                                beach sites a <span class="green-flag"></span>. Enjoy our waters!
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--03/22-->
+                    <div class="ba">
+                        <hr>
+                        <h4>Marine Quality Report for the week of March 22, 2022</h4>
+                        <div>
+                            <p>TINIAN MARINE WATER QUALITY REPORT</p>
+                            <h4 class="green-flag"></h4>
+                            <p>
+                                The Bureau of Environmental and Coastal Quality (BECQ) analyzed (10) water
+                                samples
+                                collected from <a href="./assets/img/beachadvisory/tinian.jpg" target="_blank">Tinian’s
+                                    recreational beaches</a> and storm water drainages
+                                this
+                                week as part of the regularly scheduled sampling. None of the samples collected
+                                contained excessive concentration of fecal indicator bacteria nor did they
+                                exceed
+                                the CNMI Marine Water Quality Standards. Therefore, BECQ assigns all of the
+                                sampled
+                                beach sites a <span class="green-flag"></span>. Enjoy our waters!
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--03/22-->
+                    <div class="ba">
+                        <hr>
+                        <h4>Marine Quality Report for the week of March 22, 2022</h4>
+                        <div>
+                            <p>SAIPAN WEST BEACH MARINE WATER QUALITY REPORT</p>
+                            <h4 class="red-flag"></h4>
+                            <p>The Division of Environmental Quality (DEQ) analyzed water samples collected from
+                                <a href="./assets/img/beachadvisory/spn-west.jpg">
+                                    Saipan's west coast recreational beaches
+                                </a> and storm drainages every week. Samples collected from the following
+                                locations
+                                contained excessive
+                                concentrations of fecal indicator bacteria (enterococci) that exceeded the CNMI
+                                Marine Water Quality Standards. These bacteria can indicate the presence of
+                                human
+                                and animal waste in the water. <strong>However, studies have shown that storm
+                                    water
+                                    runoff in tropical environments may also contain these bacteria from the
+                                    natural environment,</strong> which may not be directly associated with
+                                public
+                                health
+                                concerns. Therefore, In order to adequately address public health concerns, DEQ
+                                has
+                                given the
+                                following locations a <span class="red-flag"></span> and advises the public
+                                <strong>not to
+                                    fish or swim within 300 feet of
+                                    these locations for the next 48 hours or until otherwise notified.</strong>
+                            </p>
+                            <div class="w-75 mx-auto">
+                                <table class="table table-borderless ba-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>PAUPAU (WB02)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>CENTRAL REPAIR (WB08)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>AMP DRAINAGE (WB12.1)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--03/17-->
+                    <div class="ba">
+                        <hr>
+                        <h4>Marine Quality Report for the week of March 17, 2022</h4>
+                        <div>
+                            <p>MANAGAHA MARINE WATER QUALITY REPORT</p>
+                            <h4 class="green-flag"></h4>
+                            <p>
+                                The Bureau of Environmental and Coastal Quality (BECQ) analyzes water samples
+                                collected from <a href="./assets/img/beachadvisory/managaha.jpg">Managaha’s
+                                    recreational beaches</a> and dock as part of the regularly
+                                scheduled sampling. None of the samples collected this week contained excessive
+                                concentrations of fecal indicator bacteria nor did they exceed the CNMI Marine
+                                Water
+                                Quality Standards. Therefore, BECQ assigns all of the sampled beach sites a
+                                <span class="green-flag"></span>. Enjoy our waters!
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--03/17-->
+                    <div class="ba">
+                        <hr>
+                        <h4>Marine Quality Report for the week of March 17, 2022</h4>
+                        <div>
+                            <p>ROTA MARINE WATER QUALITY REPORT</p>
+                            <h4 class="green-flag"></h4>
+                            <p>The Bureau of Environmental and Coastal Quality (BECQ) analyzed marine water
+                                samples
+                                collected from <a href="./assets/img/beachadvisory/rota.jpg">Rota's recreational
+                                    beaches</a> and storm drainages this week. None of the samples collected
+                                contained excessive concentration of fecal indicator bacteria nor did they
+                                exceed
+                                the CNMI Marine Water Quality Standards. Therefore, BECQ assigns all of the
+                                sampled
+                                beach sites a <span class="green-flag"></span>. Enjoy our waters!</p>
+                        </div>
+                    </div>
+
+                    <!--03/16-->
+                    <div class="ba">
+                        <hr>
+                        <h4>Marine Quality Report for the week of March 16, 2022</h4>
+                        <div>
+                            <p>TINIAN BEACHES MARINE QUALITY REPORT</p>
+                            <h4 class="red-flag"></h4>
+                            <p>The Division of Environmental Quality (DEQ) analyzed water samples collected this
+                                week from <a href="./assets/img/beachadvisory/tinian.jpg">Tinian's recreational
+                                    beaches</a> and storm drainages. Samples collected from
+                                the following locations contained excessive concentrations of fecal indicator
+                                bacteria (enterococci) that exceeded the CNMI Marine Water Quality Standards.
+                                These
+                                bacteria can indicate the presence of human and animal waste in the water.
+                                <strong>However, studies have shown that storm water runoff in tropical
+                                    environments
+                                    may also contain these bacteria from the natural environment</strong>, which
+                                may
+                                not be directly associated with public health concerns. Therefore, In order to
+                                adequately address public health concerns, DEQ has given the following locations
+                                a
+                                <span class="red-flag"></span> and advises the public <strong>not to fish or
+                                    swim
+                                    within 300 feet of these locations for the next 48 hours or until otherwise
+                                    notified</strong>.
+                            </p>
+                            <div class="w-75 mx-auto">
+                                <table class="table table-borderless ba-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>UNAI BABUI (T03)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--03/15-->
+                    <div class="ba">
+                        <hr>
+                        <h4>Marine Quality Report for the week of March 15, 2022</h4>
+                        <div>
+                            <p>SAIPAN WEST BEACH MARINE WATER QUALITY REPORT</p>
+                            <h4 class="red-flag"></h4>
+                            <p>The Division of Environmental Quality (DEQ) analyzed water samples collected from
+                                <a href="./assets/img/beachadvisory/spn-west.jpg">
+                                    Saipan's west coast recreational beaches
+                                </a> and storm drainages every week. Samples collected from the following
+                                locations
+                                contained excessive
+                                concentrations of fecal indicator bacteria (enterococci) that exceeded the CNMI
+                                Marine Water Quality Standards. These bacteria can indicate the presence of
+                                human
+                                and animal waste in the water. <strong>However, studies have shown that storm
+                                    water
+                                    runoff in tropical environments may also contain these bacteria from the
+                                    natural environment,</strong> which may not be directly associated with
+                                public
+                                health
+                                concerns. Therefore, In order to adequately address public health concerns, DEQ
+                                has
+                                given the
+                                following locations a <span class="red-flag"></span> and advises the public
+                                <strong>not to
+                                    fish or swim within 300 feet of
+                                    these locations for the next 48 hours or until otherwise notified.</strong>
+                            </p>
+                            <div class="w-75 mx-auto">
+                                <table class="table table-borderless ba-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>SMILING COVE MARINA (WB12)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>AMP DRAINAGE (WB12.1)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--03/10-->
+                    <div class="ba">
+                        <hr>
+                        <h4>Marine Quality Report for the week of March 10, 2022</h4>
+                        <div>
+                            <p>MANAGAHA MARINE WATER QUALITY REPORT</p>
+                            <h4 class="green-flag"></h4>
+                            <p>The Bureau of Environmental and Coastal Quality (BECQ) analyzes water samples
+                                collected from Saipan's east and south recreational beaches this week as part of
+                                the
+                                regularly scheduled sampling. None of the samples collected contained excessive
+                                concentration of fecal indicator bacteria nor did they exceed the CNMI Marine
+                                Water
+                                Quality Standards. Therefore, BECQ assigns the following sampled beach sites a
+                                <span class="green-flag"></span>.
+                                <strong>Enjoy our waters!</strong>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--03/09-->
+                    <div class="ba">
+                        <hr>
+                        <h4>Marine Quality Report for the week of March 09, 2022</h4>
+                        <div>
+                            <p>SAIPAN EAST BEACHES MARINE WATER QUALITY REPORT</p>
+                            <h4 class="green-flag"></h4>
+                            <p>The Bureau of Environmental and Coastal Quality (BECQ) analyzes water samples
+                                collected from Saipan's east and south recreational beaches this week as part of
+                                the
+                                regularly scheduled sampling. None of the samples collected contained excessive
+                                concentration of fecal indicator bacteria nor did they exceed the CNMI Marine
+                                Water
+                                Quality Standards. Therefore, BECQ assigns the following sampled beach sites a
+                                <span class="green-flag"></span>.
+                                <strong>Enjoy our waters!</strong>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--03/08-->
+                    <div class="ba">
+                        <hr>
+                        <h4>Marine Quality Report for the week of March 08, 2022</h4>
+                        <div>
+                            <p>SAIPAN WEST BEACH MARINE QUALITY REPORT</p>
+                            <h4 class="red-flag"></h4>
+                            <p>The Division of Environmental Quality (DEQ) analyzed water samples collected from
+                                <a href="./assets/img/beachadvisory/spn-west.jpg">
+                                    Saipan's west coast recreational beaches
+                                </a> and storm drainages every week. Samples collected from the following
+                                locations
+                                contained excessive
+                                concentrations of fecal indicator bacteria (enterococci) that exceeded the CNMI
+                                Marine Water Quality Standards. These bacteria can indicate the presence of
+                                human
+                                and animal waste in the water. <strong>However, studies have shown that storm
+                                    water
+                                    runoff
+                                    in tropical environments may also contain these bacteria from the natural
+                                    environment,</strong> which may not be directly associated with public
+                                health
+                                concerns.
+                                Therefore, In order to adequately address public health concerns, DEQ has given
+                                the
+                                following locations a and advises the public <strong>not to fish or swim within
+                                    300
+                                    feet of
+                                    these locations for the next 48 hours or until otherwise notified.</strong>
+                            </p>
+                            <div class="w-75 mx-auto">
+                                <table class="table table-borderless ba-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>CENTRAL REPAIR (WB08)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SEA PLANE RAMP (WB09)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>PIC BEACH (WB36)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--03/04-->
+                    <div class="ba">
+                        <hr>
+                        <h4>Marine Quality Report for the week of March 04, 2022</h4>
+                        <div>
+                            <p>ROTA MARINE WATER QUALITY REPORT</p>
+                            <h4 class="red-flag"></h4>
+                            <p>The Division of Environmental Quality (DEQ) analyzed water samples collected from
+                                <a href="./assets/img/beachadvisory/rota.jpg" target="_blank">Rota's
+                                    recreational
+                                    beaches and storm drainages</a>. Samples collected from the
+                                following locations contained excessive concentrations of fecal indicator
+                                bacteria
+                                (enterococci) that exceeded the CNMI Marine Water Quality Standards. These
+                                bacteria
+                                can indicate the presence of human and animal waste in the water. <strong>
+                                    However, studies
+                                    have shown that storm water runoff in tropical environments may also contain
+                                    these
+                                    bacteria from the natural environment
+                                </strong>, which may not be directly associated with
+                                public health concerns. Therefore, In order to adequately address public health
+                                concerns, DEQ has given the following locations a "RED FLAG" and advises the
+                                public
+                                <strong>not to fish or swim within 300 feet of these locations for the next 48
+                                    hours
+                                    or
+                                    until otherwise notified</strong>.
+                            </p>
+                            <div class="w-75 mx-auto">
+                                <table class="table table-borderless ba-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>DIST #2 Drainage (R07)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--03/03-->
+                    <div class="ba">
+                        <hr>
+                        <h4>Marine Quality Report for the week of March 03, 2022</h4>
+                        <div>
+                            <p>MANAGAHA MARINE WATER QUALITY REPORT</p>
+                            <h4 class="green-flag"></h4>
+                            <p>The Division of Environmental Quality (DEQ) analyzed water samples collected from
+                                11
+                                of <a href="./assets/img/beachadvisory/managaha.jpg" target="_blank">Managaha’s
+                                    recreational beaches</a> and dock this week as part of the regularly
+                                scheduled sampling. None of the samples collected contained excessive
+                                concentrations
+                                of fecal indicator bacteria nor did they exceed the CNMI Marine Water Quality
+                                Standards. Therefore, DEQ assigns all of the sampled beach sites as <span
+                                    class="green-flag"></span>.
+                                <strong>Enjoy our waters!</strong>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--03/01-->
+                    <div class="ba">
+                        <hr>
+                        <h4>Marine Quality Report for the week of March 01, 2022</h4>
+                        <div>
+                            <p>SAIPAN WEST BEACH MARINE QUALITY REPORT</p>
+                            <h4 class="red-flag"></h4>
+                            <p>The Division of Environmental Quality (DEQ) analyzed water samples collected from
+                                <a href="./assets/img/beachadvisory/spn-west.jpg">
+                                    Saipan's west coast recreational beaches and storm drainages on the west
+                                    coast
+                                    weekly
+                                </a>. Samples collected from the following locations contained excessive
+                                concentrations of fecal indicator bacteria (enterococci) that exceeded the CNMI
+                                Marine Water Quality Standards. These bacteria can indicate the presence of
+                                human
+                                and animal waste in the water. <strong>However, studies have shown that storm
+                                    water
+                                    runoff
+                                    in tropical environments may also contain these bacteria from the natural
+                                    environment,</strong> which may not be directly associated with public
+                                health
+                                concerns.
+                                Therefore, In order to adequately address public health concerns, DEQ has given
+                                the
+                                following locations a and advises the public <strong>not to fish or swim within
+                                    300
+                                    feet of
+                                    these locations for the next 48 hours or until otherwise notified.</strong>
+                            </p>
+                            <div class="w-75 mx-auto">
+                                <table class="table table-borderless ba-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>PAUPAU BEACH (WB02)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TANAPAG MEETING HALL (WB07)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="nov2021">
+                    <!--11/16-->
+                    <div class="ba">
+                        <hr>
+                        <h4 class="text-center">Marine Quality Report for the week of November 16, 2021</h4>
+                        <p class="fw-bold">SAIPAN WEST BEACH MARINE QUALITY REPORT</p>
+                        <h4 class="red-flag"></h4>
+                        <p>
+                            The Division of Environmental Quality (DEQ) analyzed water samples collected from <a
+                                href="./assets/img/beachadvisory/spn-west.jpg" target="_blank">Saipan's west
+                                coast
+                                recreational beaches and storm drainages on the west coast weekly</a>. Samples
+                            collected from the following locations contained excessive concentrations of fecal
+                            indicator bacteria (enterococci) that exceeded the CNMI Marine Water Quality
+                            Standards.
+                            These bacteria can indicate the presence of human and animal waste in the water.
+                            <strong>However, studies have shown that storm water runoff in tropical environments
+                                may
+                                also contain these bacteria from the natural environment,</strong> which may not
+                            be
+                            directly associated with public health concerns. Therefore, In order to adequately
+                            address public health concerns, DEQ has given the following locations a <span
+                                class="red-flag"></span> and advises the public <strong>not to fish or swim
+                                within
+                                300 feet of these locations for the next 48 hours or until otherwise
+                                notified.</strong>
+                        </p>
+                        <div class="w-75 mx-auto">
+                            <table class="table table-borderless ba-table">
+                                <tbody>
+                                    <tr>
+                                        <td>TANAPAG MEETING HALL (WB07)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>OUTERCOVE MARINA (WB13)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SMILING COVE MARINA (WB12)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!--11/10-->
+                    <div class="ba">
+                        <hr>
+                        <h4 class="text-center">Marine Quality Report for the week of November 10, 2021</h4>
+                        <p class="fw-bold">SAIPAN WEST BEACH MARINE QUALITY REPORT</p>
+                        <h4 class="red-flag"></h4>
+                        <p>
+                            The Division of Environmental Quality (DEQ) analyzed water samples collected from <a
+                                href="./assets/img/beachadvisory/spn-west.jpg" target="_blank">Saipan's west
+                                coast
+                                recreational beaches and storm drainages on the west coast weekly</a>. Samples
+                            collected from the following locations contained excessive concentrations of fecal
+                            indicator bacteria (enterococci) that exceeded the CNMI Marine Water Quality
+                            Standards.
+                            These bacteria can indicate the presence of human and animal waste in the water.
+                            <strong>However, studies have shown that storm water runoff in tropical environments
+                                may
+                                also contain these bacteria from the natural environment,</strong> which may not
+                            be
+                            directly associated with public health concerns. Therefore, In order to adequately
+                            address public health concerns, DEQ has given the following locations a <span
+                                class="red-flag"></span> and advises the public <strong>not to fish or swim
+                                within
+                                300 feet of these locations for the next 48 hours or until otherwise
+                                notified.</strong>
+                        </p>
+
+                        <div class="w-75 mx-auto">
+                            <table class="table table-borderless ba-table">
+                                <tbody>
+                                    <tr>
+                                        <td>TANAPAG MEETING HALL (WB07)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SEA PLANE RAMP (WB09)</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!--11/09-->
+                    <div class="ba">
+                        <hr>
+                        <h4>Marine Quality Report for the week of November 09, 2021</h4>
+                        <div>
+                            <p>MANAGAHA MARINE WATER QUALITY REPORT </p>
+                            <h4 class="green-flag"></h4>
+                            <p>
+                                The Division of Environmental Quality (DEQ) analyzed water samples collected
+                                from 11
+                                of <a href="./assets/img/beachadvisory/managaha.jpg" target="_blank">Managaha’s
+                                    recreational beaches</a> and dock this week as part of the regularly
+                                scheduled
+                                sampling. None of the samples collected contained excessive concentrations of
+                                fecal
+                                indicator bacteria nor did they exceed the CNMI Marine Water Quality Standards.
+                                Therefore, DEQ assigns all of the sampled beach sites aa <span
+                                    class="green-flag"></span>. <strong>Enjoy our waters!</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <!--11/09-->
+                    <div class="ba">
+                        <hr>
+                        <h4 class="text-center">Marine Quality Report for the week of November 09, 2021</h4>
+                        <div class="p-2">
+                            <p class="fw-bold">MANAGAHA MARINE WATER QUALITY REPORT </p>
+                            <h4 class="green-flag"></h4>
+                            <p>
+                                The Division of Environmental Quality (DEQ) analyzed water samples collected
+                                from 11
+                                of <a href="./assets/img/beachadvisory/managaha.jpg" target="_blank">Managaha’s
+                                    recreational beaches</a> and dock this week as part of the regularly
+                                scheduled
+                                sampling. None of the samples collected contained excessive concentrations of
+                                fecal
+                                indicator bacteria nor did they exceed the CNMI Marine Water Quality Standards.
+                                Therefore, DEQ assigns all of the sampled beach sites aa <span
+                                    class="green-flag"></span>. <strong>Enjoy our waters!</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <!--11/09-->
+                    <div class="ba">
+                        <hr>
+                        <h4 class="text-center">Marine Quality Report for the week of November 09, 2021</h4>
+                        <div class="p-2">
+                            <p class="fw-bold">TINIAN MARINE WATER QUALITY REPORT </p>
+                            <h4 class="green-flag"></h4>
+                            <p>
+                                The Division of Environmental Quality (DEQ) analyzed water samples collected
+                                from 10
+                                of <a href="./assets/img/beachadvisory/tinian.jpg" target="_blank">Tinian’s
+                                    recreational beaches</a> this week as part of the regularly scheduled
+                                sampling.
+                                None of the samples collected contained excessive concentrations of fecal
+                                indicator
+                                bacteria nor did they exceed the CNMI Marine Water Quality Standards. Therefore,
+                                DEQ
+                                assigns all of the sampled beach sites a <span class="green-flag"></span>.
+                                <strong>Enjoy our waters!</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <!--11/03-->
+                    <div class="ba">
+                        <hr>
+                        <h4 class="text-center">Marine Quality Report for the week of November 03, 2021</h4>
+                        <div class="p-2">
+                            <p class="fw-bold">SAIPAN WEST BEACH MARINE QUALITY REPORT </p>
+                            <h4 class="red-flag"></h4>
+                            <p>
+                                The Division of Environmental Quality (DEQ) analyzed water samples collected
+                                from <a href="./assets/img/beachadvisory/spn-west.jpg" target="_blank">Saipan's
+                                    west
+                                    coast recreational beaches and storm drainages on the west coast weekly</a>.
+                                Samples collected from the following locations contained excessive
+                                concentrations of
+                                fecal indicator bacteria (enterococci) that exceeded the CNMI Marine Water
+                                Quality
+                                Standards. These bacteria can indicate the presence of human and animal waste in
+                                the
+                                water. <strong>However, studies have shown that storm water runoff in tropical
+                                    environments may also contain these bacteria from the natural
+                                    environment,</strong> which may not be directly associated with public
+                                health
+                                concerns. Therefore, In order to adequately address public health concerns, DEQ
+                                has
+                                given the following locations a <span class="red-flag"></span> and advises the
+                                public <strong>not to fish or swim within 300 feet of these locations for the
+                                    next
+                                    48 hours or until otherwise notified.</strong>
+                            </p>
+
+                            <div class="w-75 mx-auto">
+                                <table class="table table-borderless ba-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>PLUMERIA RESORT (WB05)</td>
+                                            <td>SEA PLANE RAMP (WB09)</td>
+                                            <td>AMP DRAINAGE (WB12.1)</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>GARAPAN BEACH (WB22)</td>
+                                            <td>AQUA RESORT (WB06)</td>
+                                            <td>DPW CHANNEL (WB10)</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>GRANDVRIO HOTEL (WB19)</td>
+                                            <td>CHALAN LAULAU (WB24)</td>
+                                            <td>TANAPAG MEETING HALL (WB07)</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>PEACE PARK (WB11.2)</td>
+                                            <td>DRAINAGE #2 (WB20)</td>
+                                            <td>CENTRAL REPAIR SHOP (WB08)</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>SMILING COVE MARINA (WB12)</td>
+                                            <td>DRAINAGE #3 (WB23)</td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--11/02-->
+                    <div class="ba">
+                        <hr>
+                        <h4 class="text-center">Marine Quality Report for the week of November 02, 2021</h4>
+                        <div class="p-2">
+                            <p class="fw-bold">TINIAN MARINE WATER QUALITY REPORT </p>
+                            <h4 class="green-flag"></h4>
+                            <p>
+                                The Division of Environmental Quality (DEQ) analyzed water samples collected
+                                from 10
+                                of <a href="./assets/img/beachadvisory/tinian.jpg" target="_blank">Tinian’s
+                                    recreational beaches</a> this week as part of the regularly scheduled
+                                sampling.
+                                None of the samples collected contained excessive concentrations of fecal
+                                indicator
+                                bacteria nor did they exceed the CNMI Marine Water Quality Standards. Therefore,
+                                DEQ
+                                assigns all of the sampled beach sites a <span class="green-flag"></span>.
+                                <strong>Enjoy our waters!</strong>
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div id="oct2021">
+                    <!--10/28-->
+                    <div class="ba">
+                        <hr>
+                        <h4 class="text-center">Marine Quality Report for the week of October 28, 2021</h4>
+                        <p class="fw-bold">SAIPAN EAST BEACH MARINE QUALITY REPORT</p>
+                        <h4 class="red-flag"></h4>
+                        <p>
+                            The Division of Environmental Quality (DEQ) analyzed water samples collected from <a
+                                href="./assets/img/beachadvisory/spn-east.jpg" target="_blank">Saipan's east and
+                                south recreational beaches</a> this week. Samples collected from the following
+                            locations contained excessive concentrations of fecal indicator bacteria
+                            (enterococci)
+                            that exceeded the CNMI Marine Water Quality Standards. These bacteria can indicate
+                            the
+                            presence of human and animal waste in the water. <strong>However, studies have shown
+                                that storm water runoff in tropical environments may also contain these bacteria
+                                from the natural environment,</strong> which may not be directly associated with
+                            public health concerns. Therefore, In order to adequately address public health
+                            concerns, DEQ has given the following locations a <span class="red-flag"></span> and
+                            advises the public <strong>not to fish or swim within 300 feet of these locations
+                                for
+                                the next 48 hours or until otherwise notified.</strong>
+                        </p>
+
+                        <ul>
+                            <li>JEFFERY'S BEACH (NEB03)</li>
+                        </ul>
+                    </div>
+                    <!--10/27-->
+                    <div class="ba">
+                        <hr>
+                        <h4 class="text-center">Marine Quality Report for the week of October 27, 2021</h4>
+                        <div class="p-2">
+                            <p class="fw-bold">SAIPAN WEST BEACH MARINE QUALITY REPORT </p>
+                            <h4 class="red-flag"></h4>
+                            <p>
+                                The Division of Environmental Quality (DEQ) analyzed water samples collected
+                                from <a href="./assets/img/beachadvisory/spn-west.jpg" target="_blank">Saipan's
+                                    west
+                                    coast recreational beaches and storm drainages on the west coast weekly</a>.
+                                Samples collected from the following locations contained excessive
+                                concentrations of
+                                fecal indicator bacteria (enterococci) that exceeded the CNMI Marine Water
+                                Quality
+                                Standards. These bacteria can indicate the presence of human and animal waste in
+                                the
+                                water. <strong>However, studies have shown that storm water runoff in tropical
+                                    environments may also contain these bacteria from the natural
+                                    environment,</strong> which may not be directly associated with public
+                                health
+                                concerns. Therefore, In order to adequately address public health concerns, DEQ
+                                has
+                                given the following locations a <span class="red-flag"></span> and advises the
+                                public <strong>not to fish or swim within 300 feet of these locations for the
+                                    next
+                                    48 hours or until otherwise notified.</strong>
+                            </p>
+
+                            <div class="w-75 mx-auto">
+                                <table class="table table-borderless ba-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>PLUMERIA HOTEL (WB05)</td>
+                                            <td>OUTERCOVE MARINA (WB13)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TANAPAG MEETING HALL (WB07)</td>
+                                            <td>SMILING COVE MARINA (WB12)</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>SEA PLANE RAMP (WB09)</td>
+                                            <td>INOS PEACE PARK (WB11.2)</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>DPW CHANNEL (WB10)</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--10/21-->
+                    <div class="ba">
+                        <hr>
+                        <h4 class="text-center">Marine Quality Report for the week of October 21, 2021</h4>
+                        <p class="fw-bold">SAIPAN EAST BEACH MARINE QUALITY REPORT</p>
+                        <h4 class="red-flag"></h4>
+                        <p>
+                            The Division of Environmental Quality (DEQ) analyzed water samples collected from <a
+                                href="./assets/img/beachadvisory/spn-east.jpg" target="_blank">Saipan's east and
+                                south recreational beaches</a> this week. Samples collected from the following
+                            locations contained excessive concentrations of fecal indicator bacteria
+                            (enterococci)
+                            that exceeded the CNMI Marine Water Quality Standards. These bacteria can indicate
+                            the
+                            presence of human and animal waste in the water. <strong>However, studies have shown
+                                that storm water runoff in tropical environments may also contain these bacteria
+                                from the natural environment,</strong> which may not be directly associated with
+                            public health concerns. Therefore, In order to adequately address public health
+                            concerns, DEQ has given the following locations a <span class="red-flag"></span> and
+                            advises the public <strong>not to fish or swim within 300 feet of these locations
+                                for
+                                the next 48 hours or until otherwise notified.</strong>
+                        </p>
+
+                        <ul>
+                            <li>SOUTH LAULAU (SEB03)</li>
+                        </ul>
+                    </div>
+                    <!--10/19-->
+                    <div class="ba">
+                        <hr>
+                        <h4 class="text-center">Marine Quality Report for the week of October 19, 2021</h4>
+                        <div class="p-2">
+                            <p class="fw-bold">SAIPAN WEST BEACH MARINE QUALITY REPORT </p>
+                            <h4 class="red-flag"></h4>
+                            <p>
+                                The Division of Environmental Quality (DEQ) analyzed water samples collected
+                                from <a href="./assets/img/beachadvisory/spn-west.jpg" target="_blank">Saipan's
+                                    west
+                                    coast recreational beaches and storm drainages on the west coast weekly</a>.
+                                Samples collected from the following locations contained excessive
+                                concentrations of
+                                fecal indicator bacteria (enterococci) that exceeded the CNMI Marine Water
+                                Quality
+                                Standards. These bacteria can indicate the presence of human and animal waste in
+                                the
+                                water. <strong>However, studies have shown that storm water runoff in tropical
+                                    environments may also contain these bacteria from the natural
+                                    environment,</strong> which may not be directly associated with public
+                                health
+                                concerns. Therefore, In order to adequately address public health concerns, DEQ
+                                has
+                                given the following locations a <span class="red-flag"></span> and advises the
+                                public <strong>not to fish or swim within 300 feet of these locations for the
+                                    next
+                                    48 hours or until otherwise notified.</strong>
+                            </p>
+
+                            <div class="w-75 mx-auto">
+                                <table class="table table-borderless ba-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>SAN ROQUE SCHOOL (WB04)</td>
+                                            <td>OUTERCOVE MARINA (WB13)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>TANAPAG MEETING HALL (WB07)</td>
+                                            <td>SMILING COVE MARINA (WB12)</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>SEA PLANE RAMP (WB09)</td>
+                                            <td>AMP DRAINAGE (WB12.1)</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>DPW CHANNEL (WB10)</td>
+                                            <td>HYATT (WB15)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!--10/15-->
+                        <div class="ba">
+                            <hr>
+                            <h4 class="text-center">Marine Quality Report for the week of October 15, 2021</h4>
+                            <div class="p-2">
+                                <p class="fw-bold">TINIAN MARINE WATER QUALITY REPORT </p>
+                                <h4 class="green-flag"></h4>
+                                <p>
+                                    The Division of Environmental Quality (DEQ) analyzed water samples collected
+                                    from 10 of <a href="./assets/img/beachadvisory/tinian.jpg" target="_blank">Tinian’s
+                                        recreational beaches</a> this week as part of
+                                    the
+                                    regularly scheduled sampling. None of the samples collected contained
+                                    excessive
+                                    concentrations of fecal indicator bacteria nor did they exceed the CNMI
+                                    Marine
+                                    Water Quality Standards. Therefore, DEQ assigns all of the sampled beach
+                                    sites a
+                                    <span class="green-flag"></span>. <strong>Enjoy our waters!</strong>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!--10/14-->
+                        <div class="ba">
+                            <hr>
+                            <h4 class="text-center ">Marine Quality Report for the week of October 14, 2021</h4>
+
+                            <div class="p-2">
+                                <p class="fw-bold">SAIPAN EAST BEACH MARINE QUALITY REPORT</p>
+                                <h4 class="red-flag"></h4>
+                                <p>
+                                    The Division of Environmental Quality (DEQ) analyzed water samples collected
+                                    from <a href="./assets/img/beachadvisory/spn-east.jpg" target="_blank">Saipan's
+                                        east and south recreational beaches</a> this week. Samples collected
+                                    from
+                                    the following locations contained excessive concentrations of fecal
+                                    indicator
+                                    bacteria (enterococci) that exceeded the CNMI Marine Water Quality
+                                    Standards.
+                                    These bacteria can indicate the presence of human and animal waste in the
+                                    water.
+                                    <strong>However, studies have shown that storm water runoff in tropical
+                                        environments may also contain these bacteria from the natural
+                                        environment,</strong> which may not be directly associated with public
+                                    health concerns. Therefore, In order to adequately address public health
+                                    concerns, DEQ has given the following locations a <span class="red-flag"></span>
+                                    and advises the public <strong>not to fish or swim within 300 feet of these
+                                        locations for the next 48 hours or until otherwise notified.</strong>
+                                </p>
+                                <ul class="list-unstyled fw-bold text-center">
+                                    <li>HIDDEN BEACH (NEB07)</li>
+                                    <li>JEFFERY'S BEACH (NEB03)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ba">
+                            <hr>
+                            <h4 class="text-center ">Marine Quality Report for the week of October 14, 2021</h4>
+                            <div class=" p-2">
+                                <p class="fw-bold">ROTA MARINE WATER QUALITY REPORT</p>
+                                <h4 class="red-flag"></h4>
+                                <p>
+                                    The Division of Environmental Quality (DEQ) analyzed water samples collected
+                                    from <a href="./assets/img/beachadvisory/rota.jpg" target="_blank">Rota's
+                                        recreational beaches and storm drainages</a>. Samples collected from the
+                                    following locations contained excessive concentrations of fecal indicator
+                                    bacteria (enterococci) that exceeded the CNMI Marine Water Quality
+                                    Standards.
+                                    These bacteria can indicate the presence of human and animal waste in the
+                                    water.
+                                    <strong>However, studies have shown that storm water runoff in tropical
+                                        environments may also contain these bacteria from the natural
+                                        environment,</strong> which may not be directly associated with public
+                                    health concerns. Therefore, In order to adequately address public health
+                                    concerns, DEQ has given the following locations a <span class="red-flag"></span>
+                                    and advises the public <strong>not to fish or swim within 300 feet of these
+                                        locations for the next 48 hours or until otherwise notified.</strong>
+                                </p>
+                                <ul class="list-unstyled fw-bold text-center">
+                                    <li>DIST #2 DRAINAGE (R07)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!--10/13-->
+                        <div class="ba">
+                            <hr>
+                            <h4 class="text-center ">Marine Quality Report for the week of October 13, 2021</h4>
+
+                            <div class="p-2">
+                                <p class="fw-bold">SAIPAN WEST BEACH MARINE WATER QUALITY REPORT</p>
+                                <h4 class="red-flag"></h4>
+                                <p>
+                                    The Division of Environmental Quality (DEQ) analyzed water samples collected
+                                    from <a href="./assets/img/beachadvisory/spn-west.jpg" target="_blank">Saipan's
+                                        west coast recreational beaches and storm drainages on the west coast
+                                        weekly</a>. Samples collected from the following locations contained
+                                    excessive concentrations of fecal indicator bacteria (enterococci) that
+                                    exceeded
+                                    the CNMI Marine Water Quality Standards. These bacteria can indicate the
+                                    presence of human and animal waste in the water. <strong>However, studies
+                                        have
+                                        shown that storm water runoff in tropical environments may also contain
+                                        these bacteria from the natural environment,</strong> which may not be
+                                    directly associated with public health concerns. Therefore, In order to
+                                    adequately address public health concerns, DEQ has given the following
+                                    locations
+                                    a <span class="red-flag"></span> and advises the public <strong>not to fish
+                                        or
+                                        swim within 300 feet of these locations for the next 48 hours or until
+                                        otherwise notified.</strong>
+                                </p>
+
+                                <div class="w-75 mx-auto">
+                                    <table class="table table-borderless ba-table">
+                                        <tbody>
+                                            <tr>
+                                                <td>TANAPAG MEETING HALL (WB07)</td>
+                                                <td>AMP DRAINAGE (WB12.1)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>CK DIST. #4 LALLY BEACH (WB32)</td>
+                                                <td>CHALAN PIAO BEACH (WB33)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--10/08-->
+                        <div class="ba">
+                            <hr>
+                            <h4 class="text-center">Marine Quality Report for the week of October 08, 2021</h4>
+                            <div class="p-2">
+                                <p class="fw-bold">MANAGAHA MARINE WATER QUALITY REPORT </p>
+                                <h4 class="green-flag"></h4>
+                                The Division of Environmental Quality (DEQ) analyzed water samples collected
+                                from 11
+                                of <a href="./assets/img/beachadvisory/managaha.jpg" target="_blank">Managaha’s
+                                    recreational beaches and dock</a> this week as part of the regularly
+                                scheduled
+                                sampling. None of the samples collected contained excessive concentrations of
+                                fecal
+                                indicator bacteria nor did they exceed the CNMI Marine Water Quality Standards.
+                                Therefore, DEQ assigns all of the sampled beach sites a <span
+                                    class="green-flag"></span>. <strong>Enjoy our waters!</strong>
+                            </div>
+                        </div>
+
+                        <!--10/07-->
+                        <div class="ba">
+                            <hr>
+                            <h4 class="text-center ">Marine Quality Report for the week of October 07, 2021</h4>
+
+                            <div class="p-2">
+                                <p class="fw-bold">ROTA MARINE QUALITY REPORT</p>
+                                <h4 class="red-flag"></h4>
+                                <p>
+                                    The Division of Environmental Quality (DEQ) analyzed water samples collected
+                                    from <a href="./assets/img/beachadvisory/rota.jpg" target="_blank">Rota's
+                                        recreational beaches and storm drainages</a>. Samples collected from the
+                                    following locations contained excessive concentrations of fecal indicator
+                                    bacteria (enterococci) that exceeded the CNMI Marine Water Quality
+                                    Standards.
+                                    These bacteria can indicate the presence of human and animal waste in the
+                                    water.
+                                    <strong>However, studies have shown that storm water runoff in tropical
+                                        environments may also contain these bacteria from the natural
+                                        environment,</strong> which may not be directly associated with public
+                                    health concerns. Therefore, In order to adequately address public health
+                                    concerns, DEQ has given the following locations a <span class="red-flag"></span>
+                                    and advises the public <strong>not to fish or swim within 300 feet of these
+                                        locations for the next 48 hours or until otherwise notified.</strong>
+                                </p>
+                                <ul class="list-unstyled fw-bold text-center">
+                                    <li>WEST HARBOR MARINA (R06)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--10/15-->
+                    <div class="ba">
+                        <hr>
+                        <h4 class="text-center">Marine Quality Report for the week of October 15, 2021</h4>
+                        <div class="p-2">
+                            <p class="fw-bold">TINIAN MARINE WATER QUALITY REPORT </p>
+                            <h4 class="green-flag"></h4>
+                            <p>
+                                The Division of Environmental Quality (DEQ) analyzed water samples collected
+                                from 10
+                                of <a href="./assets/img/beachadvisory/tinian.jpg" target="_blank">Tinian’s
+                                    recreational beaches</a> this week as part of the regularly scheduled
+                                sampling.
+                                None of the samples collected contained excessive concentrations of fecal
+                                indicator
+                                bacteria nor did they exceed the CNMI Marine Water Quality Standards. Therefore,
+                                DEQ
+                                assigns all of the sampled beach sites a <span class="green-flag"></span>.
+                                <strong>Enjoy our waters!</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <!--10/14-->
+                    <div class="ba">
+                        <hr>
+                        <h4 class="text-center ">Marine Quality Report for the week of October 14, 2021</h4>
+
+                        <div class="p-2">
+                            <p class="fw-bold">SAIPAN EAST BEACH MARINE QUALITY REPORT</p>
+                            <h4 class="red-flag"></h4>
+                            <p>
+                                The Division of Environmental Quality (DEQ) analyzed water samples collected
+                                from <a href="./assets/img/beachadvisory/spn-east.jpg" target="_blank">Saipan's
+                                    east and
+                                    south recreational beaches</a> this week. Samples collected from the
+                                following
+                                locations contained excessive concentrations of fecal indicator bacteria
+                                (enterococci) that exceeded the CNMI Marine Water Quality Standards. These
+                                bacteria
+                                can indicate the presence of human and animal waste in the water.
+                                <strong>However,
+                                    studies have shown that storm water runoff in tropical environments may also
+                                    contain these bacteria from the natural environment,</strong> which may not
+                                be
+                                directly associated with public health concerns. Therefore, In order to
+                                adequately
+                                address public health concerns, DEQ has given the following locations a <span
+                                    class="red-flag"></span> and advises the public <strong>not to fish or swim
+                                    within 300 feet of these locations for the next 48 hours or until otherwise
+                                    notified.</strong>
+                            </p>
+                            <ul class="list-unstyled fw-bold text-center">
+                                <li>HIDDEN BEACH (NEB07)</li>
+                                <li>JEFFERY'S BEACH (NEB03)</li>
+                            </ul>
+                        </div>
+
+
+                        <div class=" p-3">
+                            <p class="fw-bold">ROTA MARINE WATER QUALITY REPORT</p>
+                            <h4 class="red-flag"></h4>
+                            <p>
+                                The Division of Environmental Quality (DEQ) analyzed water samples collected
+                                from <a href="./assets/img/beachadvisory/rota.jpg" target="_blank">Rota's
+                                    recreational
+                                    beaches and storm drainages</a>. Samples collected from the following
+                                locations
+                                contained excessive concentrations of fecal indicator bacteria (enterococci)
+                                that
+                                exceeded the CNMI Marine Water Quality Standards. These bacteria can indicate
+                                the
+                                presence of human and animal waste in the water. <strong>However, studies have
+                                    shown
+                                    that storm water runoff in tropical environments may also contain these
+                                    bacteria
+                                    from the natural environment,</strong> which may not be directly associated
+                                with
+                                public health concerns. Therefore, In order to adequately address public health
+                                concerns, DEQ has given the following locations a <span class="red-flag"></span>
+                                and
+                                advises the public <strong>not to fish or swim within 300 feet of these
+                                    locations
+                                    for the next 48 hours or until otherwise notified.</strong>
+                            </p>
+                            <ul class="list-unstyled fw-bold text-center">
+                                <li>DIST #2 DRAINAGE (R07)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--10/13-->
+                    <div class="ba">
+                        <hr>
+                        <h4 class="text-center ">Marine Quality Report for the week of October 13, 2021</h4>
+
+                        <div class="p-2">
+                            <p class="fw-bold">SAIPAN WEST BEACH MARINE WATER QUALITY REPORT</p>
+                            <h4 class="red-flag"></h4>
+                            <p>
+                                The Division of Environmental Quality (DEQ) analyzed water samples collected
+                                from <a href="./assets/img/beachadvisory/spn-west.jpg" target="_blank">Saipan's
+                                    west
+                                    coast recreational beaches and storm drainages on the west coast weekly</a>.
+                                Samples collected from the following locations contained excessive
+                                concentrations of
+                                fecal indicator bacteria (enterococci) that exceeded the CNMI Marine Water
+                                Quality
+                                Standards. These bacteria can indicate the presence of human and animal waste in
+                                the
+                                water. <strong>However, studies have shown that storm water runoff in tropical
+                                    environments may also contain these bacteria from the natural
+                                    environment,</strong> which may not be directly associated with public
+                                health
+                                concerns. Therefore, In order to adequately address public health concerns, DEQ
+                                has
+                                given the following locations a <span class="red-flag"></span> and advises the
+                                public <strong>not to fish or swim within 300 feet of these locations for the
+                                    next
+                                    48 hours or until otherwise notified.</strong>
+                            </p>
+
+                            <div class="w-75 mx-auto">
+                                <table class="table table-borderless ba-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>TANAPAG MEETING HALL (WB07)</td>
+                                            <td>AMP DRAINAGE (WB12.1)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>CK DIST. #4 LALLY BEACH (WB32)</td>
+                                            <td>CHALAN PIAO BEACH (WB33)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--10/08-->
+                    <div class="ba">
+                        <hr>
+                        <h4 class="text-center">Marine Quality Report for the week of October 08, 2021</h4>
+                        <div class="p-2">
+                            <p class="fw-bold">MANAGAHA MARINE WATER QUALITY REPORT </p>
+                            <h4 class="green-flag"></h4>
+                            The Division of Environmental Quality (DEQ) analyzed water samples collected from 11
+                            of
+                            <a href="./assets/img/beachadvisory/managaha.jpg" target="_blank">Managaha’s
+                                recreational beaches and dock</a> this week as part of the regularly scheduled
+                            sampling. None of the samples collected contained excessive concentrations of fecal
+                            indicator bacteria nor did they exceed the CNMI Marine Water Quality Standards.
+                            Therefore, DEQ assigns all of the sampled beach sites a <span class="green-flag"></span>.
+                            <strong>Enjoy our waters!</strong>
+                        </div>
+                    </div>
+                    <!--10/07-->
+                    <div class="ba">
+                        <hr>
+                        <h4 class="text-center ">Marine Quality Report for the week of October 07, 2021</h4>
+
+                        <div class="p-2">
+                            <p class="fw-bold">ROTA MARINE QUALITY REPORT</p>
+                            <h4 class="red-flag"></h4>
+                            <p>
+                                The Division of Environmental Quality (DEQ) analyzed water samples collected
+                                from <a href="./assets/img/beachadvisory/rota.jpg" target="_blank">Rota's
+                                    recreational
+                                    beaches and storm drainages</a>. Samples collected from the following
+                                locations
+                                contained excessive concentrations of fecal indicator bacteria (enterococci)
+                                that
+                                exceeded the CNMI Marine Water Quality Standards. These bacteria can indicate
+                                the
+                                presence of human and animal waste in the water. <strong>However, studies have
+                                    shown
+                                    that storm water runoff in tropical environments may also contain these
+                                    bacteria
+                                    from the natural environment,</strong> which may not be directly associated
+                                with
+                                public health concerns. Therefore, In order to adequately address public health
+                                concerns, DEQ has given the following locations a <span class="red-flag"></span>
+                                and
+                                advises the public <strong>not to fish or swim within 300 feet of these
+                                    locations
+                                    for the next 48 hours or until otherwise notified.</strong>
+                            </p>
+                            <ul class="list-unstyled fw-bold text-center">
+                                <li>WEST HARBOR MARINA (R06)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+        </div>
+    </main>
+    <!-- footer -->
+    <div id="footer"></div>
+    <!-- footer -->
+
+    <!--===================== SCRIPTS ===============================-->
+    <!-- Script to bring in Nav and Footer -->
+    <!-- navbar script-->
+    <script>
+        $(function () {
+            $("#nav").load("./nav.html");
+        });
+    </script>
+
+    <!-- Footer script-->
+    <script>
+        $(function () {
+            $("#footer").load("./footer.html");
+        });
+    </script>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+
+    <!--===================== SCRIPTS ===============================-->
+</body>
+
+</html>

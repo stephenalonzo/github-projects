@@ -1,0 +1,569 @@
+.nav-logo {
+    width: 90px;
+    display: block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.blue {
+    color: #06549e;
+}
+
+.bg-darkgrey {
+    background-color: #2c2c2c;
+}
+
+.bg-lightgrey {
+    background-color: #eeeeee;
+}
+
+.w-80 {
+    width: 80% !important;
+}
+
+.w-90 {
+    width: 90% !important;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fs-sm {
+    font-size: 0.85rem;
+}
+
+.fs-bigger {
+    font-size: 1.15rem;
+}
+
+.li-square {
+    list-style-type: square;
+}
+
+.li-none {
+    list-style-type: none;
+}
+
+.ba-desc p {
+  font-weight: normal !important;
+}
+
+.ba a {
+  font-weight: bold !important;
+}
+
+#myBtn {
+    display: block;
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    bottom: 80px;
+    right: 20px;
+    z-index: 99;
+    font-size: 20px;
+    opacity: 0.8;
+    border: none;
+    outline: none;
+    background-color: #1f1b4d;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    scroll-behavior: smooth;
+}
+
+#sl-carousel img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+.index-img {
+    background: rgb(0, 0, 0, 0.075) url(../img/home/home.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.frosty {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+}
+
+#quick-links {
+    padding: 0px 10px;
+}
+
+#quick-links li {
+    list-style: none;
+}
+
+#quick-links li button {
+    width: 100%;
+    padding: 5px;
+    border-radius: 8px;
+    align-content: center;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#quick-links li button:active {
+    color: #000;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.div-wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+.div-content {
+    position: relative;
+}
+
+.solid-waste-hero,
+.sl-hero,
+.wwem-hero,
+.sdw-hero-1,
+.sdw-hero-2,
+.sdw-hero-3,
+.sar-hero-1,
+.sar-hero-2,
+.sar-hero-3 {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wqs-nps-hero {
+    background-image: url(../img/wqs_nps/hero.jpg);
+    background-position: bottom;
+}
+
+.dmp-report-hero {
+    background-image: url("../img/report-illegal-dumping/hero.jpg");
+}
+
+.solid-waste-hero {
+    background-image: url("../img/solid-waste/hero.jpg");
+}
+
+.sl-hero {
+    background-image: url(../img/surveillance_laboratory/hero.jpg);
+}
+
+.wwem-hero {
+    background-image: url(../img/wastewater_earthmoving/wwem-hero.jpg);
+}
+
+.sdw-hero-1 {
+    background-image: url(../img/safe-drinking-water/hero.jpg);
+}
+
+.sdw-hero-2 {
+    background-image: url(../img/safe-drinking-water/sdw-4.jpg);
+}
+
+.sdw-hero-3 {
+    background-image: url(../img/safe-drinking-water/sdw-5.jpg);
+}
+
+.sar-hero-1 {
+    background-image: url(../img/site-assessment-remediation/hero.jpg);
+}
+
+.sar-hero-2 {
+    background-image: url(../img/site-assessment-remediation/sar-8.jpg);
+}
+
+.sar-hero-3 {
+    background-image: url(../img/site-assessment-remediation/sar-10.jpg);
+}
+
+.sdw-hero-2::before,
+.sdw-hero-3::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.img-centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+
+.img-centered-55 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    max-width: 55%;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pdf {
+    object-fit: contain;
+}
+
+#fee-table {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#fee-table .tb-pad {
+    height: 50px;
+    vertical-align: bottom;
+}
+
+#fee-table .total {
+    text-align: right;
+}
+
+#fee-table .last-item {
+    text-decoration: underline;
+}
+
+#fee-table td + td + td {
+    text-align: right;
+}
+
+.li-space li {
+    margin-bottom: 10px;
+}
+
+#litter-control img,
+#sar-pub img {
+    width: 100%;
+    height: auto;
+    padding: 2px;
+}
+
+#recycle img {
+    height: 220px;
+    width: 100%;
+}
+
+#mwq img {
+    display: block;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.pos-top-center {
+    object-position: top center;
+}
+
+.pos-center {
+    object-position: center;
+}
+
+#recycle p {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.95rem;
+}
+
+.li-tight li {
+    margin: 5px;
+}
+
+#sar-pub p,
+#sar-pub h5 {
+    text-align: center;
+}
+
+.img-80-auto {
+    width: 80%;
+    height: auto;
+}
+
+.img-50-auto {
+    width: 50%;
+    height: auto;
+}
+
+.img-80 {
+    width: 80%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.img-h300 {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: top center;
+}
+
+#imparedWaters img {
+    width: 75%;
+    height: 200px;
+    object-fit: cover;
+}
+
+#well-drilling img {
+    height: 350px;
+    object-fit: cover;
+}
+
+.bg-darkgrey a {
+    color: #fff;
+}
+
+#staff a {
+    color: #000;
+}
+
+.carousel-item img {
+    height: 350px;
+}
+
+#monitoring-sites img {
+    height: auto;
+    width: 100%;
+}
+
+#monitoring-sites p {
+    text-align: center;
+}
+
+body .admin-msg {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    background: #fcfcfc;
+    font-size: 1rem;
+}
+
+body .rfp h3 {
+    font-weight: 700;
+    color: #06549e;
+    font-size: 1.5rem;
+}
+
+body .rfp .rfp-text h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+body .rfp .rfp-text h6 {
+    font-weight: 700;
+}
+
+body .rfp .rfp-text small {
+    font-style: italic;
+    color: #707070;
+}
+
+body .rfp .rfp-text small a {
+    text-decoration: none;
+    color: #06549e;
+}
+
+.rfp-closed {
+    font-weight: 500;
+    --bs-table-bg: #f8d7da;
+    --bs-table-striped-bg: #eccccf;
+    --bs-table-striped-color: #000;
+    --bs-table-active-bg: #dfc2c4;
+    --bs-table-active-color: #000;
+    --bs-table-hover-bg: #e5c7ca;
+    --bs-table-hover-color: #000;
+    color: #000;
+    border-color: #dfc2c4;
+}
+
+.rfp-open {
+    font-weight: 500;
+    --bs-table-bg: #d1e7dd;
+    --bs-table-striped-bg: #c7dbd2;
+    --bs-table-striped-color: #000;
+    --bs-table-active-bg: #bcd0c7;
+    --bs-table-active-color: #000;
+    --bs-table-hover-bg: #c1d6cc;
+    --bs-table-hover-color: #000;
+    color: #000;
+    border-color: #bcd0c7;
+}
+
+.green-flag {
+    color: #008000;
+    font-weight: bold;
+}
+
+.red-flag {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+#ba-list > div {
+    padding-top: 10px;
+}
+
+.ba > h4 {
+    color: #9e5006;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1.25px;
+}
+
+.ba > div > p:nth-child(1) {
+    letter-spacing: 1.25px;
+    font-size: 1.025rem;
+    text-align: center;
+}
+
+.ba-table {
+    border-collapse: separate;
+    border-spacing: 5px 0;
+    vertical-align: middle !important;
+    text-align: center !important;
+    padding-top: 10px;
+}
+
+.ba-table td {
+    font-weight: 700;
+    padding: 0;
+}
+
+.ba {
+    padding-top: 2rem;
+}
+
+.ba ul li {
+    margin: 0;
+}
+
+.ba h4 {
+    text-align: center;
+}
+
+.ba div {
+    padding: 0.5rem !important;
+}
+
+.ba div p:nth-child(1) {
+    font-weight: bold
+}
+
+
+.red-flag::after {
+    content: "RED FLAG";
+}
+
+.green-flag::after {
+    content: "GREEN FLAG";
+}
+
+.ba ul {
+    padding-left: 0;
+    list-style: none;
+    font-weight: 700;
+    text-align: center !important;
+}
+
+@media (min-width: 480px) {
+
+    #welcome-text {
+        /*        font-size: .85rem;*/
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    #welcome-text {
+        /*        font-size: .95rem;*/
+    }
+
+    #logo img {
+        width: 40%
+    }
+
+    #recycle img {
+        width: 50%;
+    }
+
+    #3r {
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 769px) {
+    #3r {
+        text-align: end;
+
+    }
+
+    #3r-staff div img {
+        width: 75%
+    }
+}
+
+@media (max-width: 1024px) {
+
+    #welcome-text,
+    #logo h2 {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 1025px) {
+
+    #logo h2 {
+        text-align: start;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    #welcome-text h2 {
+        font-size: 1.25rem;
+    }
+
+    #welcome-text {
+        padding-top: 5px;
+    }
+
+    #logo img {
+        max-width: 100px;
+    }
+}
+
+@media (min-width: 993px) {
+
+    #logo img {
+        width: 120px;
+    }
+
+    #welcome-text {
+        text-align: left;
+    }
+}
+
+@media (min-width: 1201px) {}

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parks and Recreation | Department of Lands and Natural Resources</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+
+    <link rel="stylesheet" href="./font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="./dist/inter.css">
+    <link rel="stylesheet" href="./dist/output.css">
+    <!--Required .js file to load nav &amp; footer-->
+    <script src="./js/scrollToTop.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body class="">
+
+
+    <h1 class="text-white text-xl md:text-3xl xl:text-5xl bg-black/70 fixed right-0">
+    </h1>
+    <script>
+        function showBrowserWidth() {
+            const width =
+                window.innerWidth ||
+                document.documentElement.clientWidth ||
+                document.body.clientWidth
+            document.querySelector('h1').innerHTML = `Width: ${width}`;
+        }
+        window.onload = showBrowserWidth;
+        window.onresize = showBrowserWidth;
+    </script>
+
+
+
+
+    <!-- hero -->
+    <div class="pr-hero">
+        <header>
+            <div class=" nav-load"></div>
+        </header>
+        <div class="container flex flex-col pt-10 pb-20 px-6 mx-auto space-y-0 text-white">
+            <div class="flex flex-col items-center justify-center text-center w-full md:mx-auto lg:mx-auto lg:w-3/4">
+                <h1 class="font-semibold text-5xl">Division of Parks and Recreation</h1>
+                <p class="mt-3 font-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero iure facilis repellat quos iste voluptate, nihil sunt atque corrupti, id illo unde ad tenetur ducimus, possimus earum esse exercitationem blanditiis.</p>
+                <form action="" method="POST" class="mt-6 w-full sm:max-w-screen-xs md:max-w-screen-sm z-0">
+                    <div class="input-wrapper text-black">
+                        <input type="text" class="py-2 px-3 w-full" placeholder="How can we help?">
+                        <label for="" class="fas fa-search input-icon"></label>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+        <section class="page-banner">
+            <!-- <div class="banner1-load"></div> -->
+            <!--            <div class="banner2-load"></div>-->
+            <!--            <div class="banner3-load"></div>-->
+        </section>
+    </div>
+
+    <!-- Services -->
+    <div class="bg-dlnrgreen-lighter/25 py-2 z-10 mobile:px-2">
+        <div class="mx-auto max-w-2xl sm:px-6 lg:max-w-7xl lg:px-8 pt-3">
+            <h2 class="text-center lg:text-justify capitalize text-xl md:text-3xl font-bold text-dlnrgreen-darker">Quick Links</h2>
+            <div class="py-3">
+                <div class="grid grid-cols-4 md:grid-cols-4 lg:divide-x-2">
+                    <div class=" flex py-2 items-center justify-center capitalize hover:text-dlnrgreen-darker/75 sm:flex-1 text-dlnrgreen-darker cursor-pointer">
+                        <a class="text-center" href="#">
+                            <i class="fas fa-file-alt text-3xl mobile:text-2xl"></i>
+                            <p class="font-sm lg:font-base">Regulations</p>
+                        </a>
+                    </div>
+                    <div class=" flex py-2 items-center justify-center capitalize hover:text-dlnrgreen-darker/75 sm:flex-1 text-dlnrgreen-darker cursor-pointer">
+                        <a class="text-center" href="./fees.html#pr-fees">
+                            <i class="fas fa-usd-circle text-3xl mobile:text-2xl"></i>
+                            <p class="font-sm lg:font-base">Fees</p>
+                        </a>
+                    </div>
+
+                    <div class=" flex py-2 items-center justify-center capitalize hover:text-dlnrgreen-darker/75 sm:flex-1 text-dlnrgreen-darker cursor-pointer">
+                        <a class="text-center" href="#">
+                            <i class="fas fa-images text-3xl mobile:text-2xl"></i>
+                            <p class="font-sm lg:font-base">Gallery</p>
+                        </a>
+                    </div>
+                    <div class=" flex py-2 items-center justify-center capitalize hover:text-dlnrgreen-darker/75 sm:flex-1 text-dlnrgreen-darker cursor-pointer">
+                        <a class="text-center" href="./pavilion-reservation.html">
+                            <i class="fas fa-calendar-alt text-3xl mobile:text-2xl"></i>
+                            <p class="font-sm lg:font-base">Calendar</p>
+                        </a>
+                    </div>
+
+                    <!-- <div class=" flex py-2 items-center justify-center capitalize hover:text-dlnrgreen-darker/75 sm:flex-1 text-dlnrgreen-darker cursor-pointer">
+                        <a class="text-center" href="/">
+                            <i class="fas fa-clipboard-list-check text-3xl mobile:text-2xl"></i>
+                            <p class="font-sm lg:font-base">Make a Reservation</p>
+                        </a>
+                    </div> -->
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <hr class="w-11/12 mx-auto">
+
+    <main class="pr-content pt-5 md:pt-10  ">
+        <section class="about-us px-5 container mx-auto">
+            <div class="space-y-6 grid grid-rows-1 md:grid-flow-col">
+                <div class="about-us px-4 space-y-4">
+                    <h2 class="font-bold text-2xl md:text-start border-l-8 border-dlnrgreen-main pl-2">About the
+                        Division</h2>
+                    <div class="space-y-4">
+                        <!-- floating logo -->
+                        <div class="block w-full mx-auto">
+                            <img src="./assets/img/dlnr-logo.png" alt="" class="w-48 lg:w-64 lg:float-right lg:inline-block mx-auto">
+                        </div>
+                        <!-- Page Title -->
+                        <p class="">
+                            Parks and Recreational areas have been established by constitutional mandate and public laws to ensure that prime spaces under public land were maintained for community purposes and activities. Along with such acres developed exclusively for public recreational purposes, the neighboring vicinities have increased its land value by 100%, causing developers to race and retain private acres for hotels and other developments. These sureties assures private companies the potential to expand creating a booming economy in the CNMI.
+                        </p>
+                    </div>
+
+                    <!-- <h2 class="font-bold text-2xl border-l-8 border-dfw-blue-main pl-2">Mission and Mandates</h2> -->
+                    <div class="space-y-4">
+                        <div class="vision space-y-2">
+                            <h2 class="font-bold">
+                                Our Vision
+                            </h2>
+                            <p>
+                                A parks and recreation system is the pride of the Commonwealth being that public be given full access to enjoy nature at
+                                its best, availing opportunity to visit historical sites, structures and beaches that are significant to the Commonwealth of
+                                the Northern Mariana Islands (Saipan).
+                            </p>
+                        </div>
+                        <div class="mission space-y-2">
+                            <h2 class="font-bold">
+                                Our Mission
+                            </h2>
+                            <p>
+                                To enhance the quality of life in the CNMI by providing exceptional parks and recreation experiences while preserving
+                                significant natural and cultural resources and its economic stability
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- facilities -->
+        <section class="text-black mt-10 px-5 container mx-auto">
+            <div class="container mx-auto py-4 px-4">
+                <div class="pb-4 max-w-sm">
+                    <h2 class="font-bold text-2xl md:text-start border-l-8 border-dlnrgreen-main pl-2">Facilities</h2>
+
+                </div>
+                <p class="pb-2 px-4">The Division of Parks and Recreation oversee many facilities all around the island ranging from Pavilions by the beach to sport complexes. Click on a facility below to learn more about them.</p>
+                <div class="grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-4 px-4">
+
+                    <a class="flex items-center gap-4 p-2 hover:underline hover:underline-offset-2 hover:text-dlnrgreen-darker" href="">
+                        <span class="text-dlnrgreen-main">
+                            <i class="fas fa-landmark"></i>
+                        </span>
+                        <strong class=" font-normal"> Garapan Central Park</strong>
+                    </a>
+                    <a class="flex items-center gap-4 p-2 hover:underline hover:underline-offset-2 hover:text-dlnrgreen-darker" href="./minachom-atdao.html">
+                        <span class="text-dlnrgreen-main">
+                            <i class="fas fa-landmark"></i>
+                        </span>
+                        <strong class=" font-normal"> Minachom Atdao</strong>
+                    </a>
+                    <a class="flex items-center gap-4 p-2 hover:underline hover:underline-offset-2 hover:text-dlnrgreen-darker" href="">
+                        <span class="text-dlnrgreen-main">
+                            <i class="fas fa-landmark"></i>
+                        </span>
+                        <strong class=" font-normal"> Kilili Beach Pavilion</strong>
+                    </a>
+                    <a class="flex items-center gap-4 p-2 hover:underline hover:underline-offset-2 hover:text-dlnrgreen-darker" href="">
+                        <span class="text-dlnrgreen-main">
+                            <i class="fas fa-landmark"></i>
+                        </span>
+                        <strong class=" font-normal">San Isidro Beach Park Pavilion</strong>
+                    </a>
+                    <a class="flex items-center gap-4 p-2 hover:underline hover:underline-offset-2 hover:text-dlnrgreen-darker" href="">
+                        <span class="text-dlnrgreen-main">
+                            <i class="fas fa-landmark"></i>
+                        </span>
+                        <strong class=" font-normal">Micro Beach Pavilion</strong>
+                    </a>
+                    <a class="flex items-center gap-4 p-2 hover:underline hover:underline-offset-2 hover:text-dlnrgreen-darker" href="">
+                        <span class="text-dlnrgreen-main">
+                            <i class="fas fa-landmark"></i>
+                        </span>
+                        <strong class=" font-normal">Fishing Base Pavilion</strong>
+                    </a>
+                    <a class="flex items-center gap-4 p-2 hover:underline hover:underline-offset-2 hover:text-dlnrgreen-darker" href="">
+                        <span class="text-dlnrgreen-main">
+                            <i class="fas fa-landmark"></i>
+                        </span>
+                        <strong class=" font-normal">Lao Lao Beach</strong>
+                    </a>
+                    <a class="flex items-center gap-4 pr-2 py-2 pl-1 hover:underline hover:underline-offset-2 hover:text-dlnrgreen-darker" href="">
+                        <span class="text-sky-500">
+                            <i class="fas fa-baseball"></i>
+                        </span>
+                        <strong class=" font-normal">Capitol Hill Baseball Field</strong>
+                    </a>
+                    <a class="flex items-center gap-4 pr-2 py-2 pl-1 hover:underline hover:underline-offset-2 hover:text-dlnrgreen-darker" href="">
+                        <span class="text-sky-500">
+                            <i class="fas fa-baseball"></i>
+                        </span>
+                        <strong class=" font-normal">Dan Dan Baseball Field</strong>
+                    </a>
+                    <a class="flex items-center gap-4 pr-2 py-2 pl-1 hover:underline hover:underline-offset-2 hover:text-dlnrgreen-darker" href="">
+                        <span class="text-orange-500">
+                            <i class="fal fa-basketball-hoop"></i>
+                        </span>
+                        <strong class=" font-normal">Gualo Rai Basketball Court</strong>
+                    </a>
+                    <a class="flex items-center gap-4 pr-2 py-2 pl-1 hover:underline hover:underline-offset-2 hover:text-dlnrgreen-darker" href="">
+                        <span class="text-orange-500">
+                            <i class="fal fa-basketball-hoop"></i>
+                        </span>
+                        <strong class=" font-normal">Kagman Basketball Court</strong>
+                    </a>
+                    <a class="flex items-center gap-4 pr-2 py-2 pl-1 hover:underline hover:underline-offset-2 hover:text-dlnrgreen-darker" href="">
+                        <span class="text-orange-500">
+                            <i class="fal fa-basketball-hoop"></i>
+                        </span>
+                        <strong class=" font-normal">San Antonio Basketball Court</strong>
+                    </a>
+                    <a class="flex items-center gap-4 p-2 hover:underline hover:underline-offset-2 hover:text-dlnrgreen-darker" href="">
+                        <span class="text-stone-500">
+                            <i class="fas fa-monument"></i>
+                        </span>
+                        <strong class=" font-normal">Korean Peace Memorial</strong>
+                    </a>
+                    <a class="flex items-center gap-4 p-2 hover:underline hover:underline-offset-2 hover:text-dlnrgreen-darker" href="">
+                        <span class="text-stone-500">
+                            <i class="fas fa-monument"></i>
+                        </span>
+                        <strong class=" font-normal">Okinawa Peace Memorial</strong>
+                    </a>
+                    <a class="flex items-center gap-4 p-2 hover:underline hover:underline-offset-2 hover:text-dlnrgreen-darker" href="">
+                        <span class="text-stone-500">
+                            <i class="fas fa-monument"></i>
+                        </span>
+                        <strong class=" font-normal">Last Command Post</strong>
+                    </a>
+                    <a class="flex items-center gap-4 p-2 hover:underline hover:underline-offset-2 hover:text-dlnrgreen-darker" href="">
+                        <span class="text-stone-500">
+                            <i class="fas fa-monument"></i>
+                        </span>
+                        <strong class=" font-normal">Japanese Peace Monument</strong>
+                    </a>
+                    <a class="flex items-center gap-4 p-2 hover:underline hover:underline-offset-2 hover:text-dlnrgreen-darker" href="">
+                        <span class="text-stone-500">
+                            <i class="fas fa-monument"></i>
+                        </span>
+                        <strong class=" font-normal">
+                            Banzai Cliff Lookout
+                        </strong>
+                    </a>
+                    <a class="flex items-center gap-4 p-2 hover:underline hover:underline-offset-2 hover:text-dlnrgreen-darker" href="">
+                        <span class="text-stone-500">
+                            <i class="fas fa-monument"></i>
+                        </span>
+                        <strong class=" font-normal">
+                            Grotto Dive Site
+                        </strong>
+                    </a>
+                    <a class="flex items-center gap-4 p-2 hover:underline hover:underline-offset-2 hover:text-dlnrgreen-darker" href="">
+                        <span class="text-stone-500">
+                            <i class="fas fa-monument"></i>
+                        </span>
+                        <strong class=" font-normal">
+                            Bird Island Lookout
+                        </strong>
+                    </a>
+                    <a class="flex items-center gap-4 p-2 hover:underline hover:underline-offset-2 hover:text-dlnrgreen-darker" href="">
+                        <span class="text-stone-500">
+                            <i class="fas fa-monument"></i>
+                        </span>
+                        <strong class=" font-normal">
+                            Kalabera Cave
+                        </strong>
+                    </a>
+                    <a class="flex items-center gap-4 p-2 hover:underline hover:underline-offset-2 hover:text-dlnrgreen-darker" href="">
+                        <span class="text-stone-500">
+                            <i class="fas fa-monument"></i>
+                        </span>
+                        <strong class=" font-normal">
+                            Suicide Cliff Lookout
+                        </strong>
+                    </a>
+                    <a class="flex items-center gap-4 p-2 hover:underline hover:underline-offset-2 hover:text-dlnrgreen-darker" href="">
+                        <span class="text-stone-500">
+                            <i class="fas fa-monument"></i>
+                        </span>
+                        <strong class=" font-normal">
+                            Japanese Jail
+                        </strong>
+                    </a>
+                    <a class="flex items-center gap-4 p-2 hover:underline hover:underline-offset-2 hover:text-dlnrgreen-darker" href="">
+                        <span class="text-stone-500">
+                            <i class="fas fa-monument"></i>
+                        </span>
+                        <strong class=" font-normal">
+                            Susupe Peace Memorial
+                        </strong>
+                    </a>
+                    <a class="flex items-center gap-4 p-2 hover:underline hover:underline-offset-2 hover:text-dlnrgreen-darker" href="">
+                        <span class="text-stone-500">
+                            <i class="fas fa-monument"></i>
+                        </span>
+                        <strong class=" font-normal">
+                            San Jose Memorial
+                        </strong>
+                    </a>
+                    <a class="flex items-center gap-4 p-2 hover:underline hover:underline-offset-2 hover:text-dlnrgreen-darker" href="">
+                        <span class="text-stone-500">
+                            <i class="fas fa-monument"></i>
+                        </span>
+                        <strong class=" font-normal">
+                            Marpi Road Shoulder
+                        </strong>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- cta  -->
+        <section class="bg-gray-100">
+            <div class="px-4 py-10 container mx-auto">
+                <div class="flex flex-col lg:flex-row justify-between items-center">
+                    <h2 class="text-2xl font-bold tracking-tight text-black sm:text-4xl">
+                        <span class="block text-center lg:text-justify">Ready to reserve a facility for <br class="hidden md:block">
+                            your next event?</span>
+                    </h2>
+                    <div class="pt-3 lg:pt-0">
+                        <div class="ml-3 inline-flex rounded-md">
+                            <a href="./index.php" class="inline-flex items-center justify-center rounded-full bg-dlnrgreen-main px-5 py-2 text-base font-medium text-white duration-200 hover:bg-white hover:text-dlnrgreen-darker hover:border hover:border-dlnrgreen-darker">Click
+                                Here</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </main>
+    <footer class="footer">
+        <div class="footer-load"></div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

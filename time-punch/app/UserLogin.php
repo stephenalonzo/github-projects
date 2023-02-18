@@ -5,8 +5,9 @@ require_once ('AppController.php');
 function userLogin($params)
 {
 
-    $params = filterParams($params);
-    $results = getRowPunch($params);
+    $params     = filterParams($params);
+    $params     = getPayPeriod($params);
+    $results    = getEmployeeData($params);
 
     foreach ($results as $row)
     {
@@ -22,9 +23,11 @@ function userLogin($params)
             
             if ($result['emp_number'] == $params['emp_number']) {
         
+                // Declare session variables and assign to retrieve employee info
                 $_SESSION['emp_number']     = $params['emp_number'];
                 $_SESSION['emp_name']       = $result['emp_name'];
                 $_SESSION['emp_position']	= $result['emp_position'];
+                $_SESSION['emp_manager']    = $result['emp_manager'];
                 $_SESSION['punch_token'] 	= $row['punch_token'];
         
                 header("Location: index.php");
@@ -49,6 +52,7 @@ function userLogin($params)
                 $_SESSION['emp_number']     = $params['emp_number'];
                 $_SESSION['emp_name']       = $result['emp_name'];
                 $_SESSION['emp_position']	= $result['emp_position'];
+                $_SESSION['emp_manager']    = $result['emp_manager'];
                 $_SESSION['punch_token'] 	= $row['punch_token'];
         
                 header("Location: index.php");
@@ -72,6 +76,7 @@ function userLogin($params)
                 $_SESSION['emp_number']     = $params['emp_number'];
                 $_SESSION['emp_name']       = $result['emp_name'];
                 $_SESSION['emp_position']	= $result['emp_position'];
+                $_SESSION['emp_manager']    = $result['emp_manager'];
                 $_SESSION['punch_token'] 	= bin2hex(random_bytes(8));
                 
                 $params['dba']['i']     = "UPDATE employees SET punch_token = :punch_token WHERE emp_number = :emp_number";

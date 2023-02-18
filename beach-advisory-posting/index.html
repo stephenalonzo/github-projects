@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <title>Home - Division of Environmental Quality</title>
+
+
+    <!-- CSS for this site -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/brands.min.css">
+    <link rel="stylesheet" href="./assets/css/solid.min.css">
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/sticky-footer-navbar.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="icon" href="./assets/img/becq-logo.png" />
+    <!--Required .js file to load nav&footer *MUST BE IN HEAD-->
+    <script src="./assets/js/jquery-3.6.0.js"></script>
+    <script src="./assets/js/bootnavbar.js"></script>
+</head>
+
+<body class="d-flex flex-column h-100 text-center text-dark index-img">
+    <header class="sticky-top">
+        <!-- nav -->
+        <div id="nav"></div>
+        <!-- nav -->
+    </header>
+    <!--Contains Navbar-->
+
+    <div id="page-container" class="
+        cover-container
+        d-flex
+        justify-content-center
+        align-items-center
+        w-100
+        h-100
+        flex-column
+      ">
+        <!-- Begin page content -->
+        <main class="flex-shrink-0 my-auto" id="content-wrap">
+            <div class="container">
+                <div class="text-center px-5">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="row">
+                                <div class="col-lg-3" id="logo">
+                                    <img class="" src="./assets/img/home/deq.jpg" alt="" />
+                                </div>
+                                <div class="col-lg-9 px-2" id="welcome-text">
+                                    <h2 class="fw-bold">
+                                        <span class="fst-italic fw-lighter"> Hafa Adai and Tirow! Welcome to the</span>
+                                        Division of Environmental Quality - Bureau of Environmental and Coastal Quality
+                                        Website
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 my-auto" id="index-right-text">
+                            <p class="fw-500 text-center">How can we help you today?</p>
+                            <h5 class="fw-500">I want to...</h5>
+                            <ul id="quick-links" class="row">
+                                <li class="col-lg-12">
+                                    <a href="./open-illegal-dumping.php"><button>Report Illegal Dumping</button></a>
+                                </li>
+                                <!-- <li class="col-lg-12">
+                                    <a href="./regulations.html"><button>File or Check My Permit Application</button></a>
+                                </li> -->
+                                <li class="col-lg-12">
+                                    <a href="./pesticide-program.html"><button>
+                                            Apply for Pesticide Applicator Certification
+                                        </button></a>
+                                </li>
+                                <li class="col-lg-12">
+                                    <a href="./beach-advisories.html"><button>Check the Beach Advisory</button></a>
+                                </li>
+                                <li class="col-lg-12">
+                                    <a href="./surveillance-laboratory.html"><button>Submit a Water Sample</button></a>
+                                </li>
+                                <li class="col-lg-12">
+                                    <a href="./wastewater-earthmoving-erosion-control.html"><button>
+                                            Clear My Land and Learn Erosion Control
+                                        </button></a>
+                                </li>
+                                <li class="col-lg-12">
+                                    <a href="./outreach.html"><button>Volunteer for Beach Clean Ups</button></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- footer -->
+    <div id="footer" class="footer index-footer mt-auto bg-light"></div>
+    <!-- footer-->
+
+    <!--===================== SCRIPTS ===============================-->
+    <!-- Script to bring in Nav and Footer -->
+    <!-- navbar script-->
+    <script>
+        $(function () {
+            $("#nav").load("./nav.html");
+        });
+    </script>
+
+    <!-- Footer script-->
+    <script>
+        $(function () {
+            $("#footer").load("./footer.html");
+        });
+    </script>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+
+    <!--===================== SCRIPTS ===============================-->
+</body>
+
+</html>

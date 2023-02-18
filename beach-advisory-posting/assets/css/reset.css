@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bitter", serif;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+html {
+  overflow-x: hidden !important;
+  scroll-behavior: smooth !important;
+}
+
+img {
+  width: 100%;
+}
+
+body a:hover {
+  transition: 0.4s ease;
+  color: #368ee0;
+}
+
+ol > li,
+ul > li {
+  margin: 0.5rem auto;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  color: #000;
+}
+
+.spacing {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.hr {
+  padding: 0.05rem;
+  border-radius: 1rem;
+}
+
+.body-width {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.bg-width {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.bg-med {
+  background: #eeeeee;
+}
+
+.bg-dark {
+  background: #2c2c2c;
+}
+
+.bg-blue {
+  background: #06549e;
+}
+
+.btn-main {
+  padding: 0.6rem;
+  background: #06549e;
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn-main:hover {
+  background: #fff;
+  border: 1px solid #06549e;
+  color: #06549e;
+  transition: 0.4s ease;
+}
+
+.btn-sub {
+  background: #fff;
+  color: #000;
+  padding: 0.6rem;
+  font-weight: 600;
+}
+
+.btn-sub:hover {
+  background: #06549e;
+  color: #fff;
+  transition: 0.4s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: #fff;
+  background-color: transparent;
+}
+
+.nav-link:focus,
+.nav-item:hover {
+  color: #368ee0;
+}
+
+.h3 {
+  color: #06549e;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.h3-sub {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.h3-black {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 1rem auto;
+  color: #000;
+}
+
+.h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #06549e;
+}
+
+.h4-sub {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.h4-white {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.h5 {
+  font-weight: 600;
+  font-size: 0.975rem;
+}
+
+.h5-sub {
+  font-weight: 700;
+  font-size: 0.975rem;
+}
+
+.a-sub {
+  color: #fff;
+}

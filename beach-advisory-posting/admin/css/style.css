@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#advDesc {
+    resize: none;
+    height: 200px;
+}
+
+option[value=""][disabled] {
+    display: none !important;
+}
+
+.green-flag::before {
+    content: "GREEN FLAG";
+    font-weight: bold;
+    color: green;
+    font-size: 1rem;
+}
+
+.red-flag::before {
+    content: "RED FLAG";
+    font-weight: bold;
+    color: red;
+    font-size: 1rem;
+}

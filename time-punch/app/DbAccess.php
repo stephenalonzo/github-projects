@@ -5,7 +5,12 @@ function dbAccess($params) {
 	try {
 
 		// Establish connection with the localhost
+		
+		// localhost
 		$pdo = new PDO("mysql:host=localhost;dbname=github_projects", 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+
+		// // 000webhost
+		// $pdo = new PDO("mysql:host=localhost;dbname=id20312172_github_projects", 'id20312172_adminw', '%Qm#})M|In5fbEbv', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
 		// Prepare various SQL statements through a foreach loop
 		foreach ($params['dba'] as $key => $value) { $stmt = $pdo->prepare($params['dba'][$key]); }

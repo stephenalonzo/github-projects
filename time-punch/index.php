@@ -4,6 +4,8 @@ require_once('app/AppHeader.php');
 require_once('app/AppAuthentication.php');
 require_once('app/AppController.php');
 
+echo $_SESSION['pay_period'];
+
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +15,7 @@ require_once('app/AppController.php');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Time Punch</title>
+    <title>Home | Time Punch</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -31,7 +33,7 @@ require_once('app/AppController.php');
                                 <h1 class="font-semibold text-xl text-start"><?php echo $_SESSION['emp_name']; ?></h1>
                                 <?php 
                             
-                                $results = getSessionPunch($params);
+                                $results = getEmployeeData($params);
 
                                 foreach ($results as $row) {
 
@@ -52,9 +54,9 @@ require_once('app/AppController.php');
                             <span class="font-semibold">Pay Period:</span>
                             <?php 
                             
-                            $results = getPayPeriod($params);
+                            $params = getPayPeriod($params);
 
-                            foreach ($results as $row) {
+                            foreach ($params['pay_period'] as $row) {
 
                                 echo date('m/d', strtotime($row['pp_start_date']))." - ".date('m/d/Y', strtotime($row['pp_end_date']));
 
@@ -66,7 +68,7 @@ require_once('app/AppController.php');
                     <div class="flex flex-col items-center text-center space-y-4">
                         <?php 
                         
-                        $results = getSessionPunch($params);
+                        $results = getEmployeeData($params);
                         
                         foreach ($results as $row) { 
                             
