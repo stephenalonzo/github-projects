@@ -10,7 +10,7 @@
     try
     {
 
-      $pdo = new PDO('mysql:host=localhost;dbname=github_projects', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+		  $pdo = new PDO("mysql:host=localhost;dbname=u483856192_githubprojects", 'u483856192_salonzo', 'X2EQy9Dil', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
       // prepare iterations of SQL queries
       foreach ($params['dba'] as $key => $value) { $stmt = $pdo->prepare($params['dba'][$key]); }
@@ -83,7 +83,7 @@
       $results = $stmt->fetch(PDO::FETCH_ASSOC);
 
       // validate username and password
-      if($results['user'] == $clean['user'] && password_verify($params['pT'], $results['pass']))
+      if($results['user'] == $clean['user'] && password_verify($params['pT'], $results['password']))
       {
 
         $_SESSION['user'] = $clean['user'];
